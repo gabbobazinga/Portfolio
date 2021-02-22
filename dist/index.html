@@ -9,142 +9,145 @@
     <title>Amore Gabriele | Web Developer</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="nav-bar">
-                <div class="left">
-                    <img src="" alt="">
-                    GA
-                </div>
-                <div class="right">
-                    <ul>
-                        <li><a href="#">ABOUT</a></li>
-                        <li><a href="#">COMPETENCE</a></li>
-                        <li><a href="#">WORKS</a></li>
-                        <li><a href="#">CONTACT</a></li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/gabriele-amore/" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/gabbobazinga" target="_blank"><i class="fab fa-github-square"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="container">
-            <div class="hero">
-                <div class="text">
-                    <p>Hello.</p>
-                    <p>I am Gabriele</p>
-                    <p>Web Developer.</p>
-                </div>
-                <div class="img">
-                    <img src="../images/half-face.png" alt="">
-                </div>
-            </div>
-        </div>
-    </header>
-    <main>
-        <section class="about">
-            <h1>About.</h1>
-            <div class="container">
-                <div class="right">
-                    <div class="circle">
-                        <img src="../images/foto-cv-quadrata.png" alt="">
+    <div id="app">
+
+        <header>
+            <nav>
+                <div class="nav-bar">
+                    <div class="left">
+                        <img src="" alt="">
+                        GA
+                    </div>
+                    <div class="right">
+                        <ul>
+                            <li @click="tab='about', scroll()"><a class="ciao" :class="{active : scrollPosition > 900 && scrollPosition < 1299}">ABOUT</a></li>
+                            <li @click="tab='skills', scroll()"><a :class="{active : scrollPosition > 1300 && scrollPosition < 1699}">SKILLS</a></li>
+                            <li @click="tab='works', scroll()"><a :class="{active : scrollPosition > 1700 && scrollPosition < 2499}">WORKS</a></li>
+                            <li @click="tab='contact', scroll()"><a :class="{active : scrollPosition > 2500}">CONTACT</a></li>
+                            <li>
+                                <a href="https://www.linkedin.com/in/gabriele-amore/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            </li>
+                            <li>
+                                <a href="https://github.com/gabbobazinga" target="_blank"><i class="fab fa-github-square"></i></a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="left">
-                    <p>
-                        Da sempre amante della tecnologia e dell'arte, terminati gli studi artistici mi sono dedicato completamente all'informatica, apprezzando particolarmente il settore in costante evoluzione, invogliandomi ad essere sempre aggiornato sulle novità che lo riguardano.
-                        <br><br>
-                        Il mondo della programmazione rispecchia perfettamente le mie passioni permettendomi una continua crescita personale e professionale. Le parole chiave di questo lavoro sono <span>unicità</span>, <span>creatività</span> e <span>libertà</span> con la consapevolezza che ci sarà sempre qualcosa di nuovo da imparare.
-                        <br><br>
-                        "𝑳𝒊𝒇𝒆 𝒊𝒔 𝒈𝒓𝒐𝒘𝒕𝒉. 𝒀𝒐𝒖 𝒈𝒓𝒐𝒘 𝒐𝒓 𝒚𝒐𝒖 𝒅𝒊𝒆." &nbsp;&nbsp; 𝑃ℎ𝑖𝑙 𝐾𝑛𝑖𝑔ℎ𝑡
-                    </p>
+            </nav>
+            <div class="container">
+                <div class="hero">
+                    <div class="text">
+                        <p>Hello.</p>
+                        <p>I am Gabriele</p>
+                        <p>Web Developer.</p>
+                    </div>
+                    <div class="img">
+                        <img src="../images/half-face.png" alt="">
+                    </div>
                 </div>
             </div>
-
-        </section>
-        <section class="competence">
-            <div>
-                <h1>Competence.</h1>
-                <div class="logos">
-                    <ul>
-                        <li>
-                            <img src="../images/logos/html.png" alt="">
-                        </li>
-                        <li>
-                            <img src="../images/logos/css.png" alt="">
-                        </li>
-                        <li>
-                            <img src="../images/logos/js.png" alt="">
-                        </li>
-                        <li>
-                            <img src="../images/logos/jquery.png" alt="">
-                        </li>
-                        <li>
-                            <img src="../images/logos/vue.png" alt="">
-                        </li>
-                        <li>
-                            <img src="../images/logos/sass.png" alt="">
-                        </li>
-                        <li>
-                            <img src="../images/logos/bootstrap.png" alt="">
-                        </li>
-                        <li>
-                            <img src="../images/logos/php.png" alt="">
-                        </li>
-                        <li>
-                            <img src="../images/logos/mysql.png" alt="">
-                        </li>
-                        <li>
-                            <img src="../images/logos/laravel.png" alt="">
-                        </li>
-                        <li>
-                            <img src="../images/logos/phpmyadmin.png" alt="">
-                        </li>
-                        <li>
-                            <img src="../images/logos/github.png" alt="">
-                        </li>
-                    </ul>
+        </header>
+        <main>
+            <section id="about" class="about">
+                <h1>About.</h1>
+                <div class="container">
+                    <div class="right">
+                        <div class="circle">
+                            <img src="../images/foto-cv-quadrata.png" alt="">
+                        </div>
+                    </div>
+                    <div class="left">
+                        <p>
+                            Da sempre amante della tecnologia e dell'arte, terminati gli studi artistici mi sono dedicato completamente all'informatica, apprezzando particolarmente il settore in costante evoluzione, invogliandomi ad essere sempre aggiornato sulle novità che lo riguardano.
+                            <br><br>
+                            Il mondo della programmazione rispecchia perfettamente le mie passioni permettendomi una continua crescita personale e professionale. Le parole chiave di questo lavoro sono <span>unicità</span>, <span>creatività</span> e <span>libertà</span> con la consapevolezza che ci sarà sempre qualcosa di nuovo da imparare.
+                            <br><br>
+                            "𝑳𝒊𝒇𝒆 𝒊𝒔 𝒈𝒓𝒐𝒘𝒕𝒉. 𝒀𝒐𝒖 𝒈𝒓𝒐𝒘 𝒐𝒓 𝒚𝒐𝒖 𝒅𝒊𝒆." &nbsp;&nbsp; 𝑃ℎ𝑖𝑙 𝐾𝑛𝑖𝑔ℎ𝑡
+                        </p>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="work">
-            <h1>Works.</h1>
-            <div id="app" class="card-box">
-                <template v-for="card in cards"> 
-                    <div class="card" :style="{backgroundImage:`url(${card.pathImg})`}">
-                        <div class="fix-bg">
-                            <div class="details">
-                                <h5>Info.</h5>
-                                <p> {{ card.info }} </p>
-                                <div class="button">
-                                    <button :class=" card.webUrl == '' ? 'd-none' : '' ">WEB</button>
-                                    <button :class=" card.codeUrl == '' ? 'd-none' : '' "><a v-if :href="card.codeUrl" target="blank">CODE</a></button>
+    
+            </section>
+            <section id="skills" class="competence">
+                <div>
+                    <h1>Skills.</h1>
+                    <div class="logos">
+                        <ul>
+                            <li>
+                                <img src="../images/logos/html.png" alt="">
+                            </li>
+                            <li>
+                                <img src="../images/logos/css.png" alt="">
+                            </li>
+                            <li>
+                                <img src="../images/logos/js.png" alt="">
+                            </li>
+                            <li>
+                                <img src="../images/logos/jquery.png" alt="">
+                            </li>
+                            <li>
+                                <img src="../images/logos/vue.png" alt="">
+                            </li>
+                            <li>
+                                <img src="../images/logos/sass.png" alt="">
+                            </li>
+                            <li>
+                                <img src="../images/logos/bootstrap.png" alt="">
+                            </li>
+                            <li>
+                                <img src="../images/logos/php.png" alt="">
+                            </li>
+                            <li>
+                                <img src="../images/logos/mysql.png" alt="">
+                            </li>
+                            <li>
+                                <img src="../images/logos/laravel.png" alt="">
+                            </li>
+                            <li>
+                                <img src="../images/logos/phpmyadmin.png" alt="">
+                            </li>
+                            <li>
+                                <img src="../images/logos/github.png" alt="">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="works" class="work">
+                <h1>Works.</h1>
+                <div class="card-box">
+                    <template v-for="card in cards"> 
+                        <div class="card" :style="{backgroundImage:`url(${card.pathImg})`}">
+                            <div class="fix-bg">
+                                <div class="details">
+                                    <h5>Info.</h5>
+                                    <p> {{ card.info }} </p>
+                                    <div class="button">
+                                        <button v-if="card.webUrl"><a v-if :href="card.webUrl" target="blank">WEB</a></button>
+                                        <button v-if="card.codeUrl"><a v-if :href="card.codeUrl" target="blank">CODE</a></button>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="info">
+                                <h3> {{ card.title }} </h3>
+                                <ul>
+                                    <template v-for="tag in card.tags">
+                                        <li> {{ tag }} </li>
+                                    </template>
+                                </ul>
+                            </div>
                         </div>
-                        <div class="info">
-                            <h3> {{ card.title }} </h3>
-                            <ul>
-                                <template v-for="tag in card.tags">
-                                    <li> {{ tag }} </li>
-                                </template>
-                            </ul>
-                        </div>
-                    </div>
-                </template>
-            </div>
-        </section>
-        <section class="contact">
-
-        </section>
-    </main>
-    <footer>
-        
-    </footer>
+                    </template>
+                </div>
+            </section>
+            <section id="contact" class="contact">
+    
+            </section>
+        </main>
+        <footer>
+            <button @click="tab='about', scroll()"> test </button>
+        </footer>
+    </div>
     <script src="app.js" charset="utf-8"></script>
 </body>
 </html>

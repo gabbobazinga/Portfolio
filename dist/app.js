@@ -12586,6 +12586,8 @@ __webpack_require__.r(__webpack_exports__);
 new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   el: '#app',
   data: {
+    tab: '',
+    scrollPosition: '',
     cards: [{
       title: 'Boolflix',
       tags: ['HTML', 'CSS', 'JS', 'VUE'],
@@ -12646,12 +12648,44 @@ new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
       title: 'Portfolio',
       tags: ['HTML', 'CSS', 'Vue', 'LaravelMix', 'Sass'],
       webUrl: '',
-      codeUrl: '',
+      codeUrl: 'https://github.com/gabbobazinga/Portfolio',
       pathImg: '../images/projects/portfolio.png',
       info: ''
     }]
+  },
+  methods: {
+    scroll: function scroll() {
+      var offset = 100;
+      var el = document.getElementById(this.tab);
+      window.scroll({
+        top: el.offsetTop - offset,
+        left: 0,
+        behavior: 'smooth'
+      });
+    },
+    handleScroll: function handleScroll() {
+      this.scrollPosition = window.scrollY;
+      console.log(this.scrollPosition);
+    }
+  },
+  mounted: function mounted() {
+    window.addEventListener('scroll', this.handleScroll);
   }
-});
+}); // handleSCroll (event) {
+//     let header = document.querySelector(".v-toolbar");
+//     if (window.scrollY > 100 && !header.className.includes('v-toolbar--bgchange')) {
+//     header.classList.add('v-toolbar--bgchange'); 
+//     } else if (window.scrollY < 100) {
+//       header.classList.remove('v-toolbar--bgchange');
+//     }
+//   }
+// },
+// created () {
+//   window.addEventListener('scroll', this.handleSCroll);
+// },
+// destroyed () {
+//   window.removeEventListener('scroll', this.handleSCroll);
+// }
 
 /***/ }),
 

@@ -33,4 +33,12 @@ body {
     .d-none {
         display: none;
     }
+
+    .v-none {
+        visibility: hidden;
+    }
+
+    .active {
+        color: $link-hover-color !important;
+    }
 }

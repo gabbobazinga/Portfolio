@@ -23,6 +23,7 @@
                 width: 300px;
                 border-radius: 100%;
                 overflow: hidden;
+                margin-right: 20px;
                 img {
                     display: block;
                     width: 100%;
@@ -45,7 +46,7 @@
         display: flex;
         justify-content: center;
         ul {
-            width: 65%;
+            width: 80%;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
@@ -71,7 +72,7 @@
         justify-content: center;
         .card {
             text-align: center;
-            margin: 20px 10px;
+            margin: 20px 20px;
             width: 400px;
             height: 250px;
             background-repeat: no-repeat;
@@ -124,9 +125,9 @@
                 }
             }
             &:hover .fix-bg {
-                opacity: 0.9;
+                opacity: 0.95;
                 z-index: 20;
-                transform: scale(1.5);
+                transform: scale(1.1);
                 border-radius: 0.5rem;
             }
             &:hover .details {
@@ -146,7 +147,7 @@
                         display: inline-block;
                         border: 2px solid lightgray;
                         color: lightgray;
-                        padding: 1px;
+                        padding: 3px;
                         margin: 5px 5px;
                     }
                 }
