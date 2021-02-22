@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $body-color;
+    font-family: 'Montserrat', sans-serif;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: $link-hover-color;
+    }
+    ul {
+        list-style: none;
+    }
+
+    section {
+        margin-bottom: 9rem;
+        padding-right: 5rem;
+        padding-left: 5rem;
+    }
+    .d-none {
+        display: none;
+    }
+}

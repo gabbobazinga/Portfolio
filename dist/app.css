@@ -1,0 +1,307 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;
+
+0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap);* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #181A1B;
+  font-family: "Montserrat", sans-serif;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #a46628;
+}
+
+body ul {
+  list-style: none;
+}
+
+body section {
+  margin-bottom: 9rem;
+  padding-right: 5rem;
+  padding-left: 5rem;
+}
+
+body .d-none {
+  display: none;
+}
+
+nav {
+  height: 150px;
+  background-image: linear-gradient(#0b0e0e 3rem, rgba(11, 14, 14, 0));
+  background-color: initial;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 90;
+}
+
+nav .nav-bar {
+  height: 60px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+nav .nav-bar a {
+  height: 2rem;
+  align-items: center;
+  color: #dbdbdb;
+  transition: color 0.4s ease-out;
+  line-height: 1;
+}
+
+nav .nav-bar a:hover {
+  color: #a46628;
+}
+
+nav .nav-bar .right ul li {
+  display: inline;
+  margin-left: 2rem;
+}
+
+nav .nav-bar .right ul li:last-of-type {
+  margin-left: 1rem;
+}
+
+nav .nav-bar .right ul li a {
+  font-size: 1.5rem;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  color: white;
+  margin-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 5rem;
+}
+
+.hero .text {
+  margin-top: 8rem;
+}
+
+.hero .text p {
+  font-size: 8rem;
+  font-weight: bolder;
+}
+
+.hero .text p:last-of-type {
+  font-size: 2rem;
+  text-align: end;
+}
+
+.hero .text p:first-of-type {
+  color: #a46628;
+}
+
+.hero .img {
+  height: 100vh;
+  position: relative;
+}
+
+.hero .img img {
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: -10%;
+  z-index: -1;
+}
+
+.about {
+  color: white;
+  text-align: end;
+}
+
+.about .container {
+  display: flex;
+}
+
+.about .container .left p {
+  text-align: end;
+  font-size: 1.2rem;
+  line-height: 1.8rem;
+}
+
+.about .container .left p span {
+  font-weight: bold;
+  font-style: italic;
+  font-size: 1.4rem;
+  color: #a46628;
+}
+
+.about .container .right {
+  display: inline-block;
+  text-align: center;
+}
+
+.about .container .right .circle {
+  width: 300px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+.about .container .right .circle img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.competence {
+  background-color: #2f2f2f;
+  height: 250px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.competence .logos {
+  display: flex;
+  justify-content: center;
+}
+
+.competence .logos ul {
+  width: 65%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.competence .logos ul li {
+  margin-right: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.competence .logos ul li img {
+  display: block;
+  max-height: 50px;
+  max-width: 120px;
+}
+
+.work .card-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.work .card-box .card {
+  text-align: center;
+  margin: 20px 10px;
+  width: 400px;
+  height: 250px;
+  background-repeat: no-repeat;
+  background-size: 400px 250px;
+  color: white;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work .card-box .card .fix-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.7;
+  background-color: black;
+  transition: opacity 0.4s, transform 0.2s ease-out;
+}
+
+.work .card-box .card .fix-bg .details {
+  display: none;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.work .card-box .card .fix-bg .details .button {
+  text-align: center;
+}
+
+.work .card-box .card .fix-bg .details .button button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: background-color 0.4s ease-out;
+  border: none;
+  font-size: 1rem;
+  padding: 5px;
+  font-weight: bold;
+}
+
+.work .card-box .card .fix-bg .details .button button:hover {
+  background-color: #a46628;
+  color: white;
+  cursor: pointer;
+}
+
+.work .card-box .card .fix-bg .details h5 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.work .card-box .card .fix-bg .details p {
+  line-height: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.work .card-box .card:hover .fix-bg {
+  opacity: 0.9;
+  z-index: 20;
+  transform: scale(1.5);
+  border-radius: 0.5rem;
+}
+
+.work .card-box .card:hover .details {
+  display: block;
+}
+
+.work .card-box .card h3 {
+  font-size: 3rem;
+}
+
+.work .card-box .card .info {
+  width: 70%;
+  text-align: center;
+  z-index: 1;
+}
+
+.work .card-box .card .info ul {
+  margin-top: 10px;
+  margin-bottom: 2rem;
+}
+
+.work .card-box .card .info ul li {
+  display: inline-block;
+  border: 2px solid lightgray;
+  color: lightgray;
+  padding: 1px;
+  margin: 5px 5px;
+}
+

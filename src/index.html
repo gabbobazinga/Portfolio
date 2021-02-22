@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <!-- <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> -->
+    <title>Amore Gabriele | Web Developer</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-bar">
+                <div class="left">
+                    <img src="" alt="">
+                    GA
+                </div>
+                <div class="right">
+                    <ul>
+                        <li><a href="#">ABOUT</a></li>
+                        <li><a href="#">COMPETENCE</a></li>
+                        <li><a href="#">WORKS</a></li>
+                        <li><a href="#">CONTACT</a></li>
+                        <li>
+                            <a href="https://www.linkedin.com/in/gabriele-amore/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/gabbobazinga" target="_blank"><i class="fab fa-github-square"></i></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="hero">
+                <div class="text">
+                    <p>Hello.</p>
+                    <p>I am Gabriele</p>
+                    <p>Web Developer.</p>
+                </div>
+                <div class="img">
+                    <img src="../images/half-face.png" alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="about">
+            <h1>About.</h1>
+            <div class="container">
+                <div class="right">
+                    <div class="circle">
+                        <img src="../images/foto-cv-quadrata.png" alt="">
+                    </div>
+                </div>
+                <div class="left">
+                    <p>
+                        Da sempre amante della tecnologia e dell'arte, terminati gli studi artistici mi sono dedicato completamente all'informatica, apprezzando particolarmente il settore in costante evoluzione, invogliandomi ad essere sempre aggiornato sulle novità che lo riguardano.
+                        <br><br>
+                        Il mondo della programmazione rispecchia perfettamente le mie passioni permettendomi una continua crescita personale e professionale. Le parole chiave di questo lavoro sono <span>unicità</span>, <span>creatività</span> e <span>libertà</span> con la consapevolezza che ci sarà sempre qualcosa di nuovo da imparare.
+                        <br><br>
+                        "𝑳𝒊𝒇𝒆 𝒊𝒔 𝒈𝒓𝒐𝒘𝒕𝒉. 𝒀𝒐𝒖 𝒈𝒓𝒐𝒘 𝒐𝒓 𝒚𝒐𝒖 𝒅𝒊𝒆." &nbsp;&nbsp; 𝑃ℎ𝑖𝑙 𝐾𝑛𝑖𝑔ℎ𝑡
+                    </p>
+                </div>
+            </div>
+
+        </section>
+        <section class="competence">
+            <div>
+                <h1>Competence.</h1>
+                <div class="logos">
+                    <ul>
+                        <li>
+                            <img src="../images/logos/html.png" alt="">
+                        </li>
+                        <li>
+                            <img src="../images/logos/css.png" alt="">
+                        </li>
+                        <li>
+                            <img src="../images/logos/js.png" alt="">
+                        </li>
+                        <li>
+                            <img src="../images/logos/jquery.png" alt="">
+                        </li>
+                        <li>
+                            <img src="../images/logos/vue.png" alt="">
+                        </li>
+                        <li>
+                            <img src="../images/logos/sass.png" alt="">
+                        </li>
+                        <li>
+                            <img src="../images/logos/bootstrap.png" alt="">
+                        </li>
+                        <li>
+                            <img src="../images/logos/php.png" alt="">
+                        </li>
+                        <li>
+                            <img src="../images/logos/mysql.png" alt="">
+                        </li>
+                        <li>
+                            <img src="../images/logos/laravel.png" alt="">
+                        </li>
+                        <li>
+                            <img src="../images/logos/phpmyadmin.png" alt="">
+                        </li>
+                        <li>
+                            <img src="../images/logos/github.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="work">
+            <h1>Works.</h1>
+            <div id="app" class="card-box">
+                <template v-for="card in cards"> 
+                    <div class="card" :style="{backgroundImage:`url(${card.pathImg})`}">
+                        <div class="fix-bg">
+                            <div class="details">
+                                <h5>Info.</h5>
+                                <p> {{ card.info }} </p>
+                                <div class="button">
+                                    <button :class=" card.webUrl == '' ? 'd-none' : '' ">WEB</button>
+                                    <button :class=" card.codeUrl == '' ? 'd-none' : '' "><a v-if :href="card.codeUrl" target="blank">CODE</a></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info">
+                            <h3> {{ card.title }} </h3>
+                            <ul>
+                                <template v-for="tag in card.tags">
+                                    <li> {{ tag }} </li>
+                                </template>
+                            </ul>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </section>
+        <section class="contact">
+
+        </section>
+    </main>
+    <footer>
+        
+    </footer>
+    <script src="app.js" charset="utf-8"></script>
+</body>
+</html>
