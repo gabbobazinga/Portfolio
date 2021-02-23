@@ -38,6 +38,10 @@ body section {
   padding-left: 5rem;
 }
 
+body section:last-of-type {
+  margin-bottom: 0;
+}
+
 body .d-none {
   display: none;
 }
@@ -80,6 +84,20 @@ nav .nav-bar a {
 
 nav .nav-bar a:hover {
   color: #a46628;
+  cursor: pointer;
+}
+
+nav .nav-bar .left {
+  width: 30px;
+  margin-left: 50px;
+}
+
+nav .nav-bar .left img {
+  display: block;
+  width: 100%;
+}
+
+nav .nav-bar .left:hover {
   cursor: pointer;
 }
 
@@ -126,6 +144,7 @@ nav .nav-bar .right ul li a {
 
 .hero .img {
   height: 100vh;
+  min-height: 900px;
   position: relative;
 }
 
@@ -162,13 +181,13 @@ nav .nav-bar .right ul li a {
 .about .container .right {
   display: inline-block;
   text-align: center;
+  margin-right: 150px;
 }
 
 .about .container .right .circle {
   width: 300px;
   border-radius: 100%;
   overflow: hidden;
-  margin-right: 20px;
 }
 
 .about .container .right .circle img {
@@ -230,6 +249,7 @@ nav .nav-bar .right ul li a {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 0.5rem;
 }
 
 .work .card-box .card .fix-bg {
@@ -251,17 +271,22 @@ nav .nav-bar .right ul li a {
 
 .work .card-box .card .fix-bg .details .button {
   text-align: center;
-}
-
-.work .card-box .card .fix-bg .details .button button {
   position: absolute;
   bottom: 10px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.work .card-box .card .fix-bg .details .button .web-btn:hover {
+  background-color: #0B5598;
+}
+
+.work .card-box .card .fix-bg .details .button button {
   transition: background-color 0.4s ease-out;
   border: none;
+  border-radius: 0.5rem;
   font-size: 1rem;
-  padding: 5px;
+  padding: 8px;
   font-weight: bold;
 }
 
@@ -269,6 +294,10 @@ nav .nav-bar .right ul li a {
   background-color: #a46628;
   color: white;
   cursor: pointer;
+}
+
+.work .card-box .card .fix-bg .details .button button:first-of-type {
+  margin-right: 5px;
 }
 
 .work .card-box .card .fix-bg .details h5 {
@@ -283,6 +312,7 @@ nav .nav-bar .right ul li a {
 
 .work .card-box .card:hover .fix-bg {
   opacity: 0.95;
+  background-color: #2f2f2f;
   z-index: 20;
   transform: scale(1.1);
   border-radius: 0.5rem;
@@ -313,5 +343,388 @@ nav .nav-bar .right ul li a {
   color: lightgray;
   padding: 3px;
   margin: 5px 5px;
+}
+
+.contact {
+  background-color: #2f2f2f;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.contact .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact .container .mapouter {
+  margin-right: 50px;
+  text-align: center;
+}
+
+.contact .container .mapouter h2 {
+  margin-bottom: 20px;
+  color: white;
+}
+
+.contact .container ul hr {
+  margin: 20px 30px;
+  opacity: 0.3;
+  border-bottom: 1px solid #1f1209;
+  box-shadow: 0 20px 20px -20px #333;
+}
+
+.contact .container ul li a {
+  font-size: 2rem;
+  color: white;
+  margin-left: 50px;
+}
+
+.contact .container ul li a i {
+  margin-right: 30px;
+}
+
+.contact .container ul li a::after {
+  position: relative;
+  opacity: 0;
+  top: -20px;
+  transition: all 1s;
+}
+
+.contact .container ul li a:hover:after {
+  opacity: 1;
+  top: 0px;
+  color: #a46628;
+}
+
+.contact .container ul li:nth-of-type(1) a::after {
+  content: "   email me!";
+  margin-left: 10px;
+}
+
+.contact .container ul li:nth-of-type(2) a::after {
+  content: "   /gabriele-amore";
+  margin-left: 10px;
+}
+
+.contact .container ul li:nth-of-type(3) a::after {
+  content: "   @gabbobazinga";
+  margin-left: 10px;
+}
+
+footer .container {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5rem;
+}
+
+footer .container span {
+  font-size: 0.8rem;
+  color: white;
+  opacity: 0.5;
+  letter-spacing: 1px;
+}
+
+/* Large desktop */
+
+@media (min-width: 1400px) {
+  .hero .text p {
+    font-size: 12rem;
+  }
+
+  .competence .logos ul {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .about .container .right {
+    margin-right: 50px;
+  }
+
+  .competence .logos ul {
+    width: 70%;
+  }
+
+  .contact .container ul li a {
+    font-size: 1.2rem;
+  }
+}
+
+/* Portrait tablet to landscape and desktop */
+
+@media (min-width: 768px) and (max-width: 979px) {
+  body section {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  nav .nav-bar .left {
+    margin-left: 1rem;
+  }
+
+  .hero {
+    padding-left: 2rem;
+  }
+
+  .hero .text {
+    margin-top: 2rem;
+  }
+
+  .hero .text p {
+    font-size: 9rem;
+  }
+
+  .hero .text p:last-of-type {
+    font-size: 2rem;
+    text-align: end;
+    margin-right: 12rem;
+  }
+
+  .hero .img img {
+    top: -15%;
+  }
+
+  .competence {
+    height: 300px;
+  }
+
+  .about .container {
+    display: block;
+  }
+
+  .about .container .right {
+    display: none;
+  }
+
+  .work .card-box .card {
+    width: 500px;
+    height: 350px;
+    background-size: 500px 350px;
+  }
+
+  .contact .container {
+    display: block;
+  }
+
+  .contact .container .mapouter {
+    margin: auto;
+  }
+}
+
+/* Landscape phone to portrait tablet */
+
+@media (min-width: 481px) and (max-width: 767px) {
+  body section {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  nav .nav-bar .left {
+    margin-left: 1rem;
+  }
+
+  nav .nav-bar .right {
+    display: none;
+  }
+
+  body section {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .hero {
+    padding-left: 2rem;
+  }
+
+  .hero .text {
+    margin-top: 2rem;
+  }
+
+  .hero .text p {
+    font-size: 7rem;
+  }
+
+  .hero .text p:last-of-type {
+    font-size: 2rem;
+    text-align: end;
+    margin-right: 12rem;
+  }
+
+  .hero .img {
+    min-height: 800px;
+  }
+
+  .hero .img img {
+    top: -15%;
+  }
+
+  .competence {
+    height: 100%;
+  }
+
+  .about .container {
+    display: block;
+  }
+
+  .about .container .right {
+    display: none;
+  }
+
+  .work .card-box .card {
+    width: 500px;
+    height: 350px;
+    background-size: 500px 350px;
+  }
+
+  .contact .container {
+    display: block;
+  }
+
+  .contact .container .mapouter {
+    margin: 0;
+  }
+
+  .contact .container .mapouter iframe {
+    width: 90%;
+    height: 90%;
+  }
+
+  .contact .container ul {
+    margin-bottom: 40px;
+  }
+
+  .contact .container ul li a {
+    font-size: 1rem;
+  }
+
+  footer .container {
+    display: block;
+    padding-top: 20px;
+  }
+
+  footer .container span {
+    font-size: 0.7rem;
+  }
+}
+
+/* Landscape phones and down */
+
+@media (max-width: 480px) {
+  body section {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  nav .nav-bar .left {
+    margin-left: 1rem;
+  }
+
+  nav .nav-bar .right {
+    display: none;
+  }
+
+  body section {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  .hero {
+    padding-left: 1rem;
+  }
+
+  .hero .text {
+    margin-top: 2rem;
+  }
+
+  .hero .text p {
+    font-size: 5rem;
+  }
+
+  .hero .text p:last-of-type {
+    font-size: 2rem;
+    text-align: end;
+    margin-right: 2rem;
+  }
+
+  .hero .img {
+    min-height: 700px;
+  }
+
+  .hero .img img {
+    top: -15%;
+  }
+
+  .competence {
+    height: 100%;
+  }
+
+  .competence .logos ul {
+    width: 100%;
+  }
+
+  .about .container {
+    display: block;
+  }
+
+  .about .container .right {
+    display: none;
+  }
+
+  .work {
+    margin-bottom: 0;
+  }
+
+  .work .card-box {
+    display: block;
+  }
+
+  .work .card-box .card {
+    margin: 20px auto;
+    width: 300px;
+    height: 150px;
+    background-size: 300px 150px;
+  }
+
+  .work .card-box .card:hover .details {
+    display: none;
+  }
+
+  .work .card-box .card h3 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+
+  .contact .container {
+    display: block;
+  }
+
+  .contact .container .mapouter {
+    margin: 0;
+  }
+
+  .contact .container .mapouter iframe {
+    width: 90%;
+    height: 90%;
+  }
+
+  .contact .container ul {
+    margin-bottom: 40px;
+  }
+
+  .contact .container ul li a {
+    font-size: 1rem;
+  }
+
+  footer .container {
+    display: block;
+    padding-top: 20px;
+  }
+
+  footer .container span {
+    font-size: 0.7rem;
+  }
 }
 

@@ -9,16 +9,16 @@ new Vue({
             {
                 title: 'Boolflix',
                 tags: ['HTML', 'CSS', 'JS', 'VUE'],
-                webUrl: '',
-                codeUrl: 'https://github.com/gabbobazinga/vue-boolflix',
+                webUrl: 'https://gabbobazinga.github.io/Boolflix/',
+                codeUrl: 'https://github.com/gabbobazinga/Boolflix',
                 pathImg: '../images/projects/boolflix.png',
                 info: 'Riproduzione di un sito simil Netflix con utilizzo di Vue, chiamate delle API del sito "The Movie DB" tramite Axios. Homepage che mostra i film più popolari suddivisi per categoria, possibilità di visione serie tv e film più popolari, implementazione dell "Infinite Scroll" ed al passaggio del mouse sulla card vista nel dettaglio di tutte le informazioni',
             },
             {
                 title: 'Spotify',
                 tags: ['HTML', 'CSS', 'JS', 'JQuery'],
-                webUrl: '',
-                codeUrl: 'https://github.com/gabbobazinga/html-css-spotifyweb',
+                webUrl: 'https://gabbobazinga.github.io/Spotifyweb/',
+                codeUrl: 'https://github.com/gabbobazinga/Spotifyweb',
                 pathImg: '../images/projects/spotify-web.png',
                 info: 'Riproduzione dell interfaccia del sito di Spotify Web, compreso il lato responsive.',
             },
@@ -41,7 +41,7 @@ new Vue({
             {
                 title: 'CampoMinato',
                 tags: ['HTML', 'CSS', 'JS', 'JQuery'],
-                webUrl: '',
+                webUrl: 'https://gabbobazinga.github.io/campominato/',
                 codeUrl: 'https://github.com/gabbobazinga/campominato',
                 pathImg: '../images/projects/campominato.png',
                 info: 'Riproduzione del famoso gioco Campo Minato con l uso di HTML/CSS e JavaScript.',
@@ -49,23 +49,23 @@ new Vue({
             {
                 title: 'DigitalOcean',
                 tags: ['HTML', 'CSS'],
-                webUrl: '',
-                codeUrl: 'https://github.com/gabbobazinga/html-css-digitalocean',
+                webUrl: 'https://gabbobazinga.github.io/DigitalOcean/',
+                codeUrl: 'https://github.com/gabbobazinga/DigitalOcean',
                 pathImg: '../images/projects/digital-ocean.png',
                 info: 'Riproduzione della Homepage del sito di DigitalOcean con HTML e CSS.',
             },
             {
                 title: 'HubSpot',
                 tags: ['HTML', 'CSS'],
-                webUrl: '',
-                codeUrl: 'https://github.com/gabbobazinga/htmlcss-hubspot',
+                webUrl: 'https://gabbobazinga.github.io/HubSpot/',
+                codeUrl: 'https://github.com/gabbobazinga/HubSpot',
                 pathImg: '../images/projects/hubspot.png',
                 info: 'Riproduzione della Homepage del sito di Hubspot con HTML e CSS',
             },
             {
                 title: 'To-Do List',
                 tags: ['HTML', 'CSS', 'JS', 'JQuery'],
-                webUrl: '',
+                webUrl: 'https://gabbobazinga.github.io/to-do-list/',
                 codeUrl: 'https://github.com/gabbobazinga/to-do-list',
                 pathImg: '../images/projects/to-do-list.png',
                 info: 'Creazione di una To Do List con l uso di HTML/CSS e JQuery che ti permette di aggiungere e rimuovere elementi potendoli evidenziare una volta completati con un click.',
@@ -95,22 +95,3 @@ new Vue({
         window.addEventListener('scroll', this.handleScroll);
     }
 });
-
-// handleSCroll (event) {
-//     let header = document.querySelector(".v-toolbar");
-//     if (window.scrollY > 100 && !header.className.includes('v-toolbar--bgchange')) {
-//     header.classList.add('v-toolbar--bgchange'); 
-//     } else if (window.scrollY < 100) {
-//       header.classList.remove('v-toolbar--bgchange');
-//     }
-//   }
-// },
-// created () {
-//   window.addEventListener('scroll', this.handleSCroll);
-
-// },
-// destroyed () {
-//   window.removeEventListener('scroll', this.handleSCroll);
-// } 
-
-

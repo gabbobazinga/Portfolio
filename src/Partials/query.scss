@@ -1,0 +1,336 @@
+/* Large desktop */
+
+@media (min-width: 1400px) {
+    .hero {
+        .text {
+            p {
+                font-size: 12rem;
+            }
+        }
+    }
+    .competence {
+        .logos {
+            ul {
+                width: 60%;
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .about {
+        .container {
+            .right {
+                margin-right: 50px;
+            }
+        }
+    }
+    .competence {
+        .logos {
+            ul {
+                width: 70%;
+            }
+        }
+    }
+
+    .contact {
+        .container {
+            ul li a {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+    body {
+        section {
+            padding-right: 2rem;
+            padding-left: 2rem;
+        }
+    }
+    nav {
+        .nav-bar {
+            .left {
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    
+    .hero {
+        padding-left: 2rem;
+        .text {
+            margin-top: 2rem;
+            p {
+                font-size: 9rem;
+                &:last-of-type {
+                    font-size: 2rem;
+                    text-align: end;
+                    margin-right: 12rem;
+                }
+            }
+        }
+        .img {
+            img {
+                top: -15%;
+            }
+        }
+    }
+
+    .competence {
+        height: 300px;
+    }
+
+    .about {
+        .container {
+            display: block;
+            .right {
+                display: none;
+            }
+        }
+    }
+
+    .work {
+        .card-box {
+            .card {
+                width: 500px;
+                height: 350px;
+                background-size: 500px 350px;
+            }
+        }
+    }
+
+    .contact {
+        .container {
+            display: block;
+            .mapouter {
+                margin: auto;
+            }
+        }
+    }
+}
+
+/* Landscape phone to portrait tablet */
+@media (min-width: 481px) and (max-width: 767px) { 
+    body {
+        section {
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+    }
+
+    nav {
+        .nav-bar {
+            .left {
+                margin-left: 1rem;
+            }
+            .right {
+                display: none;
+            }
+        }
+    }
+
+    body {
+        section {
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+    }
+        
+    .hero {
+        padding-left: 2rem;
+        .text {
+            margin-top: 2rem;
+            p {
+                font-size: 7rem;
+                &:last-of-type {
+                    font-size: 2rem;
+                    text-align: end;
+                    margin-right: 12rem;
+                }
+            }
+        }
+        .img {
+            min-height: 800px;
+            img {
+                top: -15%;
+            }
+        }
+    }
+
+    .competence {
+        height: 100%;
+    }
+
+    .about {
+        .container {
+            display: block;
+            .right {
+                display: none;
+            }
+        }
+    }
+
+    .work {
+        .card-box {
+            .card {
+                width: 500px;
+                height: 350px;
+                background-size: 500px 350px;
+            }
+        }
+    }
+
+    .contact {
+        .container {
+            display: block;
+            .mapouter {
+                margin: 0;
+                iframe {
+                    width: 90%;
+                    height: 90%;
+                }
+            }
+
+            ul {
+                margin-bottom: 40px;
+                li {
+                    a {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .container {
+            display: block;
+            padding-top: 20px;
+            span {
+                font-size: 0.7rem;
+            }
+        }
+    }
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {  
+    body {
+        section {
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+    }
+
+    nav {
+        .nav-bar {
+            .left {
+                margin-left: 1rem;
+            }
+            .right {
+                display: none;
+            }
+        }
+    }
+
+    body {
+        section {
+            padding-right: 1rem;
+            padding-left: 1rem;
+        }
+    }
+        
+    .hero {
+        padding-left: 1rem;
+        .text {
+            margin-top: 2rem;
+            p {
+                font-size: 5rem;
+                &:last-of-type {
+                    font-size: 2rem;
+                    text-align: end;
+                    margin-right: 2rem;
+                }
+            }
+        }
+        .img {
+            min-height: 700px;
+            img {
+                top: -15%;
+            }
+        }
+    }
+
+    .competence {
+        height: 100%;
+        .logos {
+            ul {
+                width: 100%;
+            }
+        }
+    }
+
+    .about {
+        .container {
+            display: block;
+            .right {
+                display: none;
+            }
+        }
+    }
+
+    .work {
+        margin-bottom: 0;
+        .card-box {
+            display: block;
+            .card {
+                margin: 20px auto;
+                width: 300px;
+                height: 150px;
+                background-size: 300px 150px;
+                &:hover .details {
+                    display: none;
+                }
+                h3 {
+                    font-size: 1.5rem;
+                    margin-top: 20px;
+                }
+            }
+        }
+    }
+
+    .contact {
+        .container {
+            display: block;
+            .mapouter {
+                margin: 0;
+                iframe {
+                    width: 90%;
+                    height: 90%;
+                }
+            }
+
+            ul {
+                margin-bottom: 40px;
+                li {
+                    a {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        .container {
+            display: block;
+            padding-top: 20px;
+            span {
+                font-size: 0.7rem;
+            }
+        }
+    }
+}

@@ -29,6 +29,9 @@ body {
         margin-bottom: 9rem;
         padding-right: 5rem;
         padding-left: 5rem;
+        &:last-of-type {
+            margin-bottom: 0;
+        }
     }
     .d-none {
         display: none;
