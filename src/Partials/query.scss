@@ -162,6 +162,14 @@
 
     .competence {
         height: 100%;
+            .logos {
+                ul {
+                    li {
+                        margin: 0;
+                        padding: 15px 15px;
+                    }
+                }
+            }
     }
 
     .about {
@@ -176,9 +184,23 @@
     .work {
         .card-box {
             .card {
-                width: 500px;
-                height: 350px;
-                background-size: 500px 350px;
+                overflow: hidden;
+                margin: 20px auto;
+                width: 470px;
+                height: 280px;
+                background-size: 470px 280px;
+                position: relative;
+                .button {
+                    position: absolute;
+                    top: 45%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                }
+                &:hover .details {
+                    p, h5, .web-btn {
+                        display: none;
+                    }
+                }
             }
         }
     }
@@ -238,6 +260,7 @@
 
     body {
         section {
+            margin-bottom: 2rem;
             padding-right: 1rem;
             padding-left: 1rem;
         }
@@ -269,6 +292,10 @@
         .logos {
             ul {
                 width: 100%;
+                li {
+                    margin: 0;
+                    padding: 15px 15px;
+                }
             }
         }
     }
@@ -287,12 +314,22 @@
         .card-box {
             display: block;
             .card {
+                overflow: hidden;
                 margin: 20px auto;
-                width: 300px;
-                height: 150px;
-                background-size: 300px 150px;
+                width: 100%;
+                height: 220px;
+                background-size: 100% 220px;
+                position: relative;
+                .button {
+                    position: absolute;
+                    top: 45%;
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                }
                 &:hover .details {
-                    display: none;
+                    p, h5, .web-btn {
+                        display: none;
+                    }
                 }
                 h3 {
                     font-size: 1.5rem;
