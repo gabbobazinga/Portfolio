@@ -88,7 +88,6 @@ new Vue({
         },
         handleScroll(){
             this.scrollPosition = window.scrollY;
-            console.log(this.scrollPosition);
         }
     },
     mounted() {    

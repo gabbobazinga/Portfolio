@@ -161,6 +161,7 @@
     }
 
     .competence {
+        padding: 2rem 0;
         height: 100%;
             .logos {
                 ul {
@@ -175,6 +176,18 @@
     .about {
         .container {
             display: block;
+            .left {
+                p {
+                    span {
+                        span {
+                            display: block;
+                            margin-right: 15px;
+                        }
+                        color: $text-prymary-color;
+                        font-size: 1.1rem;
+                    }
+                }
+            }
             .right {
                 display: none;
             }
@@ -288,6 +301,7 @@
     }
 
     .competence {
+        padding: 2rem 0;
         height: 100%;
         .logos {
             ul {
@@ -303,6 +317,18 @@
     .about {
         .container {
             display: block;
+            .left {
+                p {
+                    span {
+                        span {
+                            display: block;
+                            margin-top: -25px;
+                        }
+                        color: $text-prymary-color;
+                        font-size: 1.1rem;
+                    }
+                }
+            }
             .right {
                 display: none;
             }

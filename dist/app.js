@@ -12665,7 +12665,6 @@ new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
     },
     handleScroll: function handleScroll() {
       this.scrollPosition = window.scrollY;
-      console.log(this.scrollPosition);
     }
   },
   mounted: function mounted() {

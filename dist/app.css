@@ -567,6 +567,7 @@ footer .container span {
   }
 
   .competence {
+    padding: 2rem 0;
     height: 100%;
   }
 
@@ -577,6 +578,16 @@ footer .container span {
 
   .about .container {
     display: block;
+  }
+
+  .about .container .left p span {
+    color: white;
+    font-size: 1.1rem;
+  }
+
+  .about .container .left p span span {
+    display: block;
+    margin-right: 15px;
   }
 
   .about .container .right {
@@ -685,6 +696,7 @@ footer .container span {
   }
 
   .competence {
+    padding: 2rem 0;
     height: 100%;
   }
 
@@ -699,6 +711,16 @@ footer .container span {
 
   .about .container {
     display: block;
+  }
+
+  .about .container .left p span {
+    color: white;
+    font-size: 1.1rem;
+  }
+
+  .about .container .left p span span {
+    display: block;
+    margin-top: -25px;
   }
 
   .about .container .right {
