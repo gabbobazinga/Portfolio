@@ -12587,6 +12587,8 @@ new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
   el: '#app',
   data: {
     tab: '',
+    hover: false,
+    show: true,
     scrollPosition: '',
     cards: [{
       title: 'Boolflix',
@@ -12644,13 +12646,6 @@ new vue__WEBPACK_IMPORTED_MODULE_0___default.a({
       codeUrl: 'https://github.com/gabbobazinga/to-do-list',
       pathImg: 'https://i.ibb.co/kyTFKkW/to-do-list.png',
       info: 'Creazione di una To Do List con l uso di HTML/CSS e JQuery che ti permette di aggiungere e rimuovere elementi potendoli evidenziare una volta completati con un click.'
-    }, {
-      title: 'Portfolio',
-      tags: ['HTML', 'CSS', 'Vue', 'LaravelMix', 'Sass'],
-      webUrl: '',
-      codeUrl: 'https://github.com/gabbobazinga/Portfolio',
-      pathImg: 'https://i.ibb.co/pnZ1TMx/portfolio.png',
-      info: ''
     }]
   },
   methods: {

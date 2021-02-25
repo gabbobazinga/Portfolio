@@ -54,17 +54,16 @@ nav {
 }
 
 .hero {
-    height: 100vh;
     width: 100%;
     color: $text-prymary-color;
-    margin-top: 150px;
     display: flex;
     justify-content: space-between;
     padding-left: 5rem;
+    position: relative;
     .text {
-        margin-top: 8rem;
+        padding-top: 8rem;
         p {
-            font-size: 8rem;
+            font-size: $hero-fontsize;
             font-weight: bolder;
             &:last-of-type {
                 font-size: 2rem;
@@ -78,7 +77,6 @@ nav {
     .img {
         height: 100vh;
         min-height: 900px;
-        position: relative;
         img {
             height: 100%;
             position: absolute;

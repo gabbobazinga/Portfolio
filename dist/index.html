@@ -20,7 +20,7 @@
                     </div>
                     <div class="right">
                         <ul>
-                            <li @click="tab='about', scroll()"><a class="ciao" :class="{active : scrollPosition > 900 && scrollPosition < 1299}">ABOUT</a></li>
+                            <li @click="tab='about', scroll()"><a class="ciao" :class="{active : scrollPosition > 750 && scrollPosition < 1299}">ABOUT</a></li>
                             <li @click="tab='skills', scroll()"><a :class="{active : scrollPosition > 1300 && scrollPosition < 1699}">SKILLS</a></li>
                             <li @click="tab='works', scroll()"><a :class="{active : scrollPosition > 1700 && scrollPosition < 2499}">WORKS</a></li>
                             <li @click="tab='contact', scroll()"><a :class="{active : scrollPosition > 2700}">CONTACT</a></li>
@@ -38,7 +38,7 @@
                 <div class="hero">
                     <div class="text">
                         <p>Hello.</p>
-                        <p>I am Gabriele</p>
+                        <p>I am <span> Gabriele </span></p>
                         <p>Web Developer.</p>
                     </div>
                     <div class="img">
@@ -49,72 +49,118 @@
         </header>
         <main>
             <section id="about" class="about">
-                <h1>About.</h1>
                 <div class="container">
-                    <div class="right">
-                        <div class="circle">
-                            <img src="https://i.ibb.co/VDmqD2Q/foto-cv-quadrata.png" alt="">
+                    <div class="left">
+                        <div class="img-about">
+                            <div class="box-img">
+                                <img src="https://i.ibb.co/VDmqD2Q/foto-cv-quadrata.png" alt="">
+                            </div>
+                            <h1>About.</h1>
+                        </div>
+                        <div class="text">
+                            <p>
+                                Da sempre amante della tecnologia e dell'arte, terminati gli studi artistici mi sono dedicato completamente all'informatica, apprezzando particolarmente il settore in costante evoluzione, invogliandomi ad essere sempre aggiornato sulle novità che lo riguardano.
+                                <br><br>
+                                Il mondo della programmazione rispecchia perfettamente le mie passioni permettendomi una continua crescita personale e professionale. Le parole chiave di questo lavoro sono <span>unicità</span>, <span>creatività</span> e <span>libertà</span> con la consapevolezza che ci sarà sempre qualcosa di nuovo da imparare.
+                                <br><br>
+                                <span>
+                                    "𝑳𝒊𝒇𝒆 𝒊𝒔 𝒈𝒓𝒐𝒘𝒕𝒉. 𝒀𝒐𝒖 𝒈𝒓𝒐𝒘 𝒐𝒓 𝒚𝒐𝒖 𝒅𝒊𝒆." <br> <span>𝑃ℎ𝑖𝑙 𝐾𝑛𝑖𝑔ℎ𝑡</span>
+                                </span>
+                            </p>
                         </div>
                     </div>
-                    <div class="left">
-                        <p>
-                            Da sempre amante della tecnologia e dell'arte, terminati gli studi artistici mi sono dedicato completamente all'informatica, apprezzando particolarmente il settore in costante evoluzione, invogliandomi ad essere sempre aggiornato sulle novità che lo riguardano.
-                            <br><br>
-                            Il mondo della programmazione rispecchia perfettamente le mie passioni permettendomi una continua crescita personale e professionale. Le parole chiave di questo lavoro sono <span>unicità</span>, <span>creatività</span> e <span>libertà</span> con la consapevolezza che ci sarà sempre qualcosa di nuovo da imparare.
-                            <br><br>
-                            <span>
-                                "𝑳𝒊𝒇𝒆 𝒊𝒔 𝒈𝒓𝒐𝒘𝒕𝒉. 𝒀𝒐𝒖 𝒈𝒓𝒐𝒘 𝒐𝒓 𝒚𝒐𝒖 𝒅𝒊𝒆." &nbsp;&nbsp; <span>𝑃ℎ𝑖𝑙 𝐾𝑛𝑖𝑔ℎ𝑡</span>
-                            </span>
-                        </p>
+                    <div class="right">
+                        <div class="rectangular-form"></div>
+                        <div class="rectangular-form-down"></div>
                     </div>
                 </div>
     
             </section>
-            <section id="skills" class="competence">
-                <div>
-                    <h1>Skills.</h1>
-                    <div class="logos">
-                        <ul>
-                            <li>
-                                <img src="https://i.ibb.co/Smz7w32/html.png" alt="">
-                            </li>
-                            <li>
-                                <img src="https://i.ibb.co/SXdH1yR/css.png" alt="">
-                            </li>
-                            <li>
-                                <img src="https://i.ibb.co/SnsMxwB/js.png" alt="">
-                            </li>
-                            <li>
-                                <img src="https://i.ibb.co/tc1nmtX/jquery.png" alt="">
-                            </li>
-                            <li>
-                                <img src="https://i.ibb.co/2Pz9yF8/vue.png" alt="">
-                            </li>
-                            <li>
-                                <img src="https://i.ibb.co/S7VZMr2/sass.png" alt="">
-                            </li>
-                            <li>
-                                <img src="https://i.ibb.co/rGkrJJD/bootstrap.png" alt="">
-                            </li>
-                            <li>
-                                <img src="https://i.ibb.co/K7xSPc0/php.png" alt="">
-                            </li>
-                            <li>
-                                <img src="https://i.ibb.co/D4JK1rQ/mysql.png" alt="">
-                            </li>
-                            <li>
-                                <img src="https://i.ibb.co/B3pgt5D/laravel.png" alt="">
-                            </li>
-                            <li>
-                                <img src="https://i.ibb.co/b3Y0jFz/phpmyadmin.png" alt="">
-                            </li>
-                            <li>
-                                <img src="https://i.ibb.co/hgtyhRm/github.png" alt="">
-                            </li>
-                        </ul>
+           <section id="skills" class="skills">
+               <h1>Skills.</h1>
+                <div class="list-skills">
+                    <div class="left">
+                        <h1>Front-end. <p>text-text</p></h1>
+                        
+                        <div class="row">
+                            <div class="left">
+                                <ul>
+                                    <li>HTML5</li>
+                                    <li>CSS3</li>
+                                    <li>JavaScript</li>
+                                    <li>Vue</li>
+                                </ul>
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>JQuery</li>
+                                    <li>SASS</li>
+                                    <li>Bootstrap</li>
+                                    <li>Laravel Mix</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="div-hr"></div>
+                    <div class="right">
+                        <h1>Back-end. <p>text-text</p></h1>
+                        <div class="row">
+                            <div class="left">
+                                <ul>
+                                    <li>PHP</li>
+                                    <li>Laravel</li>
+                                </ul>
+                            </div>
+                            <div class="right">
+                                <ul>
+                                    <li>MySql</li>
+                                    <li>PHPMyAdmin</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </section>
+                <div class="logos">
+                    <ul>
+                        <li>
+                            <img src="https://i.ibb.co/Smz7w32/html.png" alt="">
+                        </li>
+                        <li>
+                            <img src="https://i.ibb.co/SXdH1yR/css.png" alt="">
+                        </li>
+                        <li>
+                            <img src="https://i.ibb.co/SnsMxwB/js.png" alt="">
+                        </li>
+                        <li>
+                            <img src="https://i.ibb.co/2Pz9yF8/vue.png" alt="">
+                        </li>
+                        <li>
+                            <img src="https://i.ibb.co/tc1nmtX/jquery.png" alt="">
+                        </li>
+                        <li>
+                            <img src="https://i.ibb.co/S7VZMr2/sass.png" alt="">
+                        </li>
+                        <li>
+                            <img src="https://i.ibb.co/rGkrJJD/bootstrap.png" alt="">
+                        </li>
+                        <li>
+                            <img src="https://i.ibb.co/K7xSPc0/php.png" alt="">
+                        </li>
+                        <li>
+                            <img src="https://i.ibb.co/D4JK1rQ/mysql.png" alt="">
+                        </li>
+                        <li>
+                            <img src="https://i.ibb.co/B3pgt5D/laravel.png" alt="">
+                        </li>
+                        <li>
+                            <img src="https://i.ibb.co/b3Y0jFz/phpmyadmin.png" alt="">
+                        </li>
+                        <li>
+                            <img src="https://i.ibb.co/hgtyhRm/github.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+           </section>
             <section id="works" class="work">
                 <h1>Works.</h1>
                 <div class="card-box">

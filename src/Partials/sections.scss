@@ -1,34 +1,58 @@
 .about {
     color: $text-prymary-color;
-    text-align: end;
+    margin-top: -100px;
+    padding-right: 0;
     .container {
         display: flex;
         .left {
-            p {
-                text-align: end;
-                font-size: 1.2rem;
-                line-height: 1.8rem;
-                span {
-                    font-weight: bold;
-                    font-style: italic;
-                    font-size: 1.4rem;
-                    color: $link-hover-color;
+            width: 40vw;
+            padding-right: 5vw;
+            padding-left: 1rem;
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            .img-about {
+                display: flex;
+                align-items: flex-end;
+                margin-bottom: 2rem;
+                h1 {
+                    margin-bottom: 0;
+                    margin-left: 20px;
+                }
+                .box-img {
+                    width: $hero-fontsize;
+                    height: $hero-fontsize;
+                    img {
+                        display: inline-block;
+                        height: 100%;
+                        width: 100%;
+                    }
+                }
+            }
+            .text {
+                p {
+                    padding-right: 20px;
                 }
             }
         }
         .right {
-            display: inline-block;
-            text-align: center;
-            margin-right: 150px;
-            .circle {
-                width: 300px;
-                border-radius: 100%;
-                overflow: hidden;
-                img {
-                    display: block;
-                    width: 100%;
-                    height: 100%;
-                }
+            opacity: 0.8;
+            width: 60vw;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            .rectangular-form {
+                transition: all 2s ease-in-out;
+                height: $hero-fontsize;
+                width: 60%;
+                background-color: $link-hover-color;
+                margin-bottom: 1rem;
+            }
+            .rectangular-form-down {
+                transition: all 2s ease-in-out;
+                height: $hero-fontsize;
+                width: 100%;
+                background-color: $text-prymary-color;
             }
         }
     }
@@ -217,6 +241,81 @@
                         content: $content;
                         margin-left: 10px;
                     }
+                }
+            }
+        }
+    }
+}
+
+.skills {
+    background: rgb(47,47,47);
+    background: linear-gradient(180deg, rgba(47,47,47,1) 0%, rgba(47,47,47,1) 55%, rgba(47,47,47,0) 100%);
+    padding: 30px 5rem;
+    margin-bottom: 0;
+    h1 {
+        text-align: start;
+        p {
+            visibility: hidden;
+        }
+    }
+    color: $text-prymary-color;
+    .list-skills {
+        h1 {
+            font-size: 1.8rem;
+            display: flex;
+            justify-content: space-around;
+        }
+        display: flex;
+        > .left {
+            width: 100%;
+            .row {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+        .div-hr {
+            height: 150px;
+            width: 2px;
+            background-color:  rgba(255, 255, 255,0.5);
+            align-self: flex-end;
+        }
+        > .right {
+            width: 100%;
+            .row {
+                display: flex;
+                justify-content: space-around;
+            }
+        }
+        ul li {
+            font-size: 1.2rem;
+            padding: 5px;
+        }
+
+        ul li:before {
+            font-family: "Font Awesome 5 Free";
+            content: "\f45c";
+            padding-right: 10px;
+            font-weight: 900;
+            color: $link-hover-color;
+        }
+    }
+    .logos {
+        margin-top: 2rem;
+        padding: 40px 0;
+        ul {
+            display: flex;
+            justify-content: space-around;
+            height: 50px;
+            li {
+                align-self: center;
+                img {
+                    transition: transform 1s ease;
+                    max-height: 40px;
+                    max-width: 70px;
+                }
+                &:hover img {
+                    transform: scale(1.5);
+                    cursor: pointer;
                 }
             }
         }

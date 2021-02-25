@@ -9,6 +9,7 @@ body {
     font-family: 'Montserrat', sans-serif;
     -ms-overflow-style: none;
     scrollbar-width: none;
+    padding-top: 150px;
     &::-webkit-scrollbar {
         display: none;
     }
@@ -43,5 +44,9 @@ body {
 
     .active {
         color: $link-hover-color !important;
+    }
+
+    .w-100 {
+        width: 100%;
     }
 }
