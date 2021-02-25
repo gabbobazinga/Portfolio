@@ -149,7 +149,7 @@ nav .nav-bar .right ul li a {
 
 .hero .img {
   height: 100vh;
-  min-height: 900px;
+  min-height: 100vh;
 }
 
 .hero .img img {
@@ -824,7 +824,6 @@ footer .container span {
   }
 
   .about {
-    position: relative;
     margin-bottom: 0;
   }
 
@@ -987,12 +986,8 @@ footer .container span {
     display: block;
   }
 
-  .hero .img {
-    min-height: 700px;
-  }
-
   .hero .img img {
-    top: -15%;
+    top: -20%;
   }
 
   .skills {

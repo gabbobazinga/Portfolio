@@ -295,7 +295,6 @@
     }
 
     .about {
-        position: relative;
         margin-bottom: 0;
         .container {
             .left {
@@ -452,9 +451,8 @@
             }
         }
         .img {
-            min-height: 700px;
             img {
-                top: -15%;
+                top: -20%;
             }
         }
     }
