@@ -750,7 +750,7 @@ footer .container span {
   }
 
   .hero .img {
-    min-height: 800px;
+    min-height: 600px;
   }
 
   .hero .img img {
@@ -925,12 +925,12 @@ footer .container span {
   }
 
   .hero .text {
-    margin-top: -2rem;
+    margin-top: -5rem;
   }
 
   .hero .text p {
-    font-size: 5rem;
-    line-height: 7rem;
+    font-size: 4rem;
+    line-height: 6rem;
   }
 
   .hero .text p:last-of-type {
@@ -985,9 +985,8 @@ footer .container span {
   }
 
   .about {
-    position: relative;
-    top: -18px;
     margin-bottom: 0;
+    padding-bottom: 10px;
   }
 
   .about .container .left {
