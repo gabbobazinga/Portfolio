@@ -450,8 +450,6 @@ nav .nav-bar .right ul li a {
 }
 
 .skills {
-  background: #2f2f2f;
-  background: linear-gradient(180deg, #2f2f2f 0%, #2f2f2f 55%, rgba(47, 47, 47, 0) 100%);
   padding: 30px 5rem;
   margin-bottom: 0;
   color: white;
@@ -561,6 +559,14 @@ footer .container span {
     font-size: 12rem;
   }
 
+  .work {
+    margin-bottom: 0;
+  }
+
+  .about {
+    margin-bottom: 2rem;
+  }
+
   .about .container .right:hover .rectangular-form {
     width: 100%;
   }
@@ -576,12 +582,35 @@ footer .container span {
     max-width: 60px;
   }
 
+  .about {
+    margin-bottom: 1rem;
+  }
+
+  .about .container .text p span {
+    font-size: 0.8rem;
+  }
+
   .about .container .right:hover .rectangular-form {
     width: 100%;
   }
 
   .about .container .right:hover .rectangular-form-down {
     width: 0.01%;
+  }
+
+  .work {
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .work .card-box .card {
+    width: 300px;
+    height: 200px;
+    background-size: 300px 200px;
+  }
+
+  .work .card-box .card h3 {
+    font-size: 1.8rem;
   }
 
   .contact .container .mapouter {
@@ -655,11 +684,12 @@ footer .container span {
 
   .about {
     position: relative;
-    top: -35px;
     margin-bottom: 0;
   }
 
   .about .container .left {
+    padding-top: 20px;
+    padding-bottom: 60px;
     width: 70vw;
     padding-right: 0;
   }
@@ -783,11 +813,12 @@ footer .container span {
 
   .about {
     position: relative;
-    top: -20px;
     margin-bottom: 0;
   }
 
   .about .container .left {
+    padding-top: 20px;
+    padding-bottom: 40px;
     width: 75vw;
     padding-right: 0;
   }
@@ -990,6 +1021,8 @@ footer .container span {
   }
 
   .about .container .left {
+    padding-top: 20px;
+    padding-bottom: 40px;
     width: 75vw;
     padding-right: 0;
   }

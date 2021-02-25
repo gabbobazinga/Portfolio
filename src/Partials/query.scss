@@ -9,7 +9,12 @@
         }
     }
 
+    .work {
+        margin-bottom: 0;
+    }
+
     .about {
+        margin-bottom: 2rem;
         .container {
             .right {
                 &:hover {
@@ -36,7 +41,17 @@
     }
 
     .about {
+        margin-bottom: 1rem;
         .container {
+            .text {
+                p {
+                    span {
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+            .left {
+            }
             .right {
                 &:hover {
                     .rectangular-form {
@@ -46,6 +61,22 @@
                         width: 0.01%;
                     }
                 }
+            }
+        }
+    }
+
+    .work {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        .card-box {
+            .card {
+                width: 300px;
+                height: 200px;
+                background-size: 300px 200px;
+                h3 {
+                    font-size: 1.8rem;
+                }
+
             }
         }
     }
@@ -122,10 +153,11 @@
 
     .about {
         position: relative;
-        top: -35px;
         margin-bottom: 0;
         .container {
             .left {
+                padding-top: 20px;
+                padding-bottom: 60px;
                 width: 70vw;
                 padding-right: 0;
             }
@@ -250,10 +282,11 @@
 
     .about {
         position: relative;
-        top: -20px;
         margin-bottom: 0;
         .container {
             .left {
+                padding-top: 20px;
+                padding-bottom: 40px;
                 width: 75vw;
                 padding-right: 0;
                 .img-about {
@@ -444,6 +477,8 @@
         padding-bottom: 10px;
         .container {
             .left {
+                padding-top: 20px;
+                padding-bottom: 40px;
                 width: 75vw;
                 padding-right: 0;
                 .img-about {
