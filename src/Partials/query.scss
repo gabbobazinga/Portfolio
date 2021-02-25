@@ -134,11 +134,10 @@
             margin-top: -5rem;
             p {
                 font-size: 9rem;
-                &:last-of-type {
-                    font-size: 2rem;
-                    text-align: end;
-                    margin-right: 12rem;
-                }
+            }
+            .wordCarousel {
+                margin-right: 3rem;
+                font-size: 3rem;
             }
         }
         .img {
@@ -259,11 +258,10 @@
             margin-top: -5rem;
             p {
                 font-size: 6rem;
-                &:last-of-type {
-                    font-size: 2rem;
-                    text-align: end;
-                    margin-right: 12rem;
-                }
+            }
+            .wordCarousel {
+                margin-right: 2.5rem;
+                font-size: 2rem;
             }
         }
         .img {
@@ -439,15 +437,12 @@
             p {
                 font-size: 4rem;
                 line-height: 6rem;
-                &:last-of-type {
-                    font-size: 1rem;
-                line-height: 0rem;
-                    text-align: end;
-                    margin-right: 2rem;
-                }
                 span {
                     display: block;
                 }
+            }
+            .wordCarousel {
+                font-size: 1.2rem;
             }
         }
         .img {
