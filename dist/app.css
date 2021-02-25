@@ -1095,6 +1095,11 @@ footer .container span {
 
   .contact .container ul li a {
     font-size: 0.8rem;
+    margin-left: 20px;
+  }
+
+  .contact .container ul li a i {
+    margin-right: 10px;
   }
 
   footer .container {
