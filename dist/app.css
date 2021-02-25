@@ -146,7 +146,6 @@ nav .nav-bar .right ul li a {
   display: flex;
   flex-direction: row-reverse;
   font-size: 3rem;
-  font-weight: 100;
   color: #eee;
 }
 
@@ -162,7 +161,6 @@ nav .nav-bar .right ul li a {
 
 .hero .text .wordCarousel div li {
   color: #a46628;
-  font-weight: 700;
   padding: 0 10px;
   height: 45px;
   margin-bottom: 45px;

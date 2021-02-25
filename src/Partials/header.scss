@@ -73,7 +73,6 @@ nav {
             display: flex;
             flex-direction: row-reverse;
             font-size: 3rem;
-            font-weight: 100;
             color: #eee;
             div {
                 text-align: end;
@@ -85,7 +84,6 @@ nav {
                 margin-top: -10px;
                 li {
                     color: $link-hover-color;
-                    font-weight: 700;
                     padding: 0 10px;
                     height: 45px;
                     margin-bottom: 45px;
