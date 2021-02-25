@@ -76,7 +76,21 @@
                 h3 {
                     font-size: 1.8rem;
                 }
-
+                .fix-bg {
+                    .details {
+                        .button {
+                            button {
+                                font-size: 0.8rem;
+                            }
+                        }
+                        p {
+                            font-size: 0.7rem;
+                        }
+                        h5 {
+                            display: none;
+                        }
+                    }
+                }
             }
         }
     }

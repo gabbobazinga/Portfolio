@@ -613,6 +613,18 @@ footer .container span {
     font-size: 1.8rem;
   }
 
+  .work .card-box .card .fix-bg .details .button button {
+    font-size: 0.8rem;
+  }
+
+  .work .card-box .card .fix-bg .details p {
+    font-size: 0.7rem;
+  }
+
+  .work .card-box .card .fix-bg .details h5 {
+    display: none;
+  }
+
   .contact .container .mapouter {
     margin: 0;
   }
