@@ -122,34 +122,113 @@ nav .nav-bar .right ul li a {
 
 .hero {
   width: 100%;
-  color: white;
   display: flex;
   justify-content: space-between;
-  padding-left: 5rem;
+  align-items: flex-start;
+  padding-top: 5rem;
+}
+
+.hero .text-test {
+  width: 70%;
   position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 
-.hero .text {
-  padding-top: 8rem;
+.hero .text-test .title {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 8rem;
 }
 
-.hero .text p {
-  font-size: 8rem;
-  font-weight: bolder;
+.hero .text-test .title .block {
+  width: 0%;
+  height: inherit;
+  background: #a46628;
+  position: absolute;
+  -webkit-animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+          animation: mainBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  display: flex;
 }
 
-.hero .text p:first-of-type {
+.hero .text-test .title h1 {
   color: #a46628;
+  font-size: 8rem;
+  -webkit-animation: mainFadeIn 2s forwards;
+  animation: mainFadeIn 2s forwards;
+  -webkit-animation-delay: 1.6s;
+          animation-delay: 1.6s;
+  opacity: 0;
+  display: flex;
+  align-items: baseline;
+  position: relative;
+  padding-left: 5rem;
 }
 
-.hero .text .wordCarousel {
+.hero .text-test .title h1 span {
+  width: 0px;
+  height: 0px;
+  border-radius: 50%;
+  background: white;
+  -webkit-animation: load 0.6s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  animation: popIn 0.8s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  margin-left: 5px;
+  margin-top: -10px;
+  position: absolute;
+  bottom: 25px;
+  right: -12px;
+}
+
+.hero .text-test .role {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 8rem;
+  margin-top: 10px;
+}
+
+.hero .text-test .role .block {
+  width: 0%;
+  height: inherit;
+  background: white;
+  position: absolute;
+  -webkit-animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+          animation: secBlock 2s cubic-bezier(0.74, 0.06, 0.4, 0.92) forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  display: flex;
+}
+
+.hero .text-test .role h1 {
+  -webkit-animation: secFadeIn 2s forwards;
+          animation: secFadeIn 2s forwards;
+  -webkit-animation-delay: 3.2s;
+          animation-delay: 3.2s;
+  opacity: 0;
+  padding-left: 5rem;
+  color: white;
+  font-size: 8rem;
+}
+
+.hero .text-test .wordCarousel {
+  opacity: 0;
+  -webkit-animation: secFadeIn 2s forwards;
+          animation: secFadeIn 2s forwards;
+  -webkit-animation-delay: 4s;
+          animation-delay: 4s;
   display: flex;
   flex-direction: row-reverse;
   font-size: 3rem;
   color: #eee;
 }
 
-.hero .text .wordCarousel div {
+.hero .text-test .wordCarousel div {
   text-align: end;
   overflow: hidden;
   position: relative;
@@ -159,7 +238,7 @@ nav .nav-bar .right ul li a {
   margin-top: -10px;
 }
 
-.hero .text .wordCarousel div li {
+.hero .text-test .wordCarousel div li {
   color: #a46628;
   padding: 0 10px;
   height: 45px;
@@ -167,7 +246,7 @@ nav .nav-bar .right ul li a {
   display: block;
 }
 
-.hero .text .flip3 {
+.hero .text-test .flip3 {
   -webkit-animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
           animation: flip3 8s cubic-bezier(0.23, 1, 0.32, 1.2) infinite;
 }
@@ -251,6 +330,192 @@ nav .nav-bar .right ul li a {
   right: 0;
   top: -10%;
   z-index: -1;
+}
+
+@-webkit-keyframes mainBlock {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+
+  50% {
+    width: 100%;
+    left: 0;
+  }
+
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes mainBlock {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+
+  50% {
+    width: 100%;
+    left: 0;
+  }
+
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes secBlock {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+
+  50% {
+    width: 100%;
+    left: 0;
+  }
+
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@keyframes secBlock {
+  0% {
+    width: 0%;
+    left: 0;
+  }
+
+  50% {
+    width: 100%;
+    left: 0;
+  }
+
+  100% {
+    width: 0;
+    left: 100%;
+  }
+}
+
+@-webkit-keyframes mainFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes mainFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes popIn {
+  0% {
+    width: 0px;
+    height: 0px;
+    background: white;
+    border: 0px solid #ddd;
+    opacity: 0;
+  }
+
+  50% {
+    width: 20px;
+    height: 20px;
+    background: white;
+    opacity: 1;
+    bottom: 60px;
+  }
+
+  65% {
+    width: 17px;
+    height: 17px;
+    bottom: 0px;
+    width: 30px;
+  }
+
+  80% {
+    width: 20px;
+    height: 20px;
+    bottom: 35px;
+  }
+
+  100% {
+    width: 17px;
+    height: 17px;
+    background: #a46628;
+    border: 0px solid #222;
+    bottom: 28px;
+  }
+}
+
+@keyframes popIn {
+  0% {
+    width: 0px;
+    height: 0px;
+    background: white;
+    border: 0px solid #ddd;
+    opacity: 0;
+  }
+
+  50% {
+    width: 20px;
+    height: 20px;
+    background: white;
+    opacity: 1;
+    bottom: 60px;
+  }
+
+  65% {
+    width: 17px;
+    height: 17px;
+    bottom: 0px;
+    width: 30px;
+  }
+
+  80% {
+    width: 20px;
+    height: 20px;
+    bottom: 35px;
+  }
+
+  100% {
+    width: 17px;
+    height: 17px;
+    background: #a46628;
+    border: 0px solid #222;
+    bottom: 28px;
+  }
+}
+
+@-webkit-keyframes secFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes secFadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
 
 .about {
@@ -645,9 +910,48 @@ footer .container span {
   letter-spacing: 1px;
 }
 
-/* Large desktop */
+@media (min-width: 1699px) {
+  body {
+    max-width: 1700px;
+    margin: auto;
+  }
 
-@media (min-width: 1400px) {
+  nav {
+    padding-right: 70px;
+  }
+
+  .hero {
+    height: 96vh;
+  }
+
+  .hero .img img {
+    top: 0;
+  }
+
+  .about .container {
+    position: relative;
+  }
+
+  .about .container .left {
+    width: 40vw;
+  }
+
+  .about .container .right {
+    width: 50vw;
+    position: relative;
+    right: -500px;
+  }
+
+  .about .container .right:hover .rectangular-form {
+    width: 100%;
+  }
+
+  .about .container .right:hover .rectangular-form-down {
+    width: 0.01%;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1698px) {
   .hero .text p {
     font-size: 12rem;
   }
@@ -691,6 +995,128 @@ footer .container span {
     width: 0.01%;
   }
 
+  .hero {
+    height: 97vh;
+  }
+
+  .hero .text-test {
+    width: 80%;
+  }
+
+  .hero .text-test .title {
+    height: 8rem;
+  }
+
+  .hero .text-test .title h1 {
+    font-size: 8rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .hero .text-test .title h1 span {
+    right: -15px;
+  }
+
+  .hero .text-test .role {
+    margin-top: 5rem;
+  }
+
+  .hero .text-test .role .block {
+    height: 18rem;
+  }
+
+  .hero .text-test .role h1 {
+    font-size: 8rem;
+    padding-left: 1rem;
+  }
+
+  .hero .text-test .wordCarousel {
+    font-size: 3rem;
+    margin-right: 5vw;
+  }
+
+  .hero .img img {
+    top: 0;
+  }
+
+@-webkit-keyframes popIn {
+    0% {
+      width: 0px;
+      height: 0px;
+      background: white;
+      border: 0px solid #ddd;
+      opacity: 0;
+    }
+
+    50% {
+      width: 20px;
+      height: 20px;
+      background: white;
+      opacity: 1;
+      bottom: 67px;
+    }
+
+    65% {
+      width: 17px;
+      height: 17px;
+      bottom: 0px;
+      width: 37px;
+    }
+
+    80% {
+      width: 20px;
+      height: 20px;
+      bottom: 50px;
+    }
+
+    100% {
+      width: 17px;
+      height: 17px;
+      background: #a46628;
+      border: 0px solid #222;
+      bottom: 43px;
+    }
+}
+
+@keyframes popIn {
+    0% {
+      width: 0px;
+      height: 0px;
+      background: white;
+      border: 0px solid #ddd;
+      opacity: 0;
+    }
+
+    50% {
+      width: 20px;
+      height: 20px;
+      background: white;
+      opacity: 1;
+      bottom: 67px;
+    }
+
+    65% {
+      width: 17px;
+      height: 17px;
+      bottom: 0px;
+      width: 37px;
+    }
+
+    80% {
+      width: 20px;
+      height: 20px;
+      bottom: 50px;
+    }
+
+    100% {
+      width: 17px;
+      height: 17px;
+      background: #a46628;
+      border: 0px solid #222;
+      bottom: 43px;
+    }
+}
+
   .work {
     margin-top: 30px;
     margin-bottom: 20px;
@@ -732,7 +1158,255 @@ footer .container span {
   }
 }
 
-/* Portrait tablet to landscape and desktop */
+@media (min-width: 1023px) and (max-width: 1025px) and (max-height: 799px) {
+  .hero {
+    height: 97vh;
+  }
+
+  .hero .text-test {
+    width: 80%;
+  }
+
+  .hero .text-test .title {
+    height: 8rem;
+  }
+
+  .hero .text-test .title h1 {
+    font-size: 8rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .hero .text-test .title h1 span {
+    right: -15px;
+  }
+
+  .hero .text-test .role {
+    margin-top: 5rem;
+  }
+
+  .hero .text-test .role .block {
+    height: 18rem;
+  }
+
+  .hero .text-test .role h1 {
+    font-size: 8rem;
+    padding-left: 1rem;
+  }
+
+  .hero .text-test .wordCarousel {
+    font-size: 3rem;
+    margin-right: 5vw;
+    margin-top: 3rem;
+  }
+
+  .hero .img img {
+    top: 0;
+  }
+
+@-webkit-keyframes popIn {
+    0% {
+      width: 0px;
+      height: 0px;
+      background: white;
+      border: 0px solid #ddd;
+      opacity: 0;
+    }
+
+    50% {
+      width: 20px;
+      height: 20px;
+      background: white;
+      opacity: 1;
+      bottom: 67px;
+    }
+
+    65% {
+      width: 17px;
+      height: 17px;
+      bottom: 0px;
+      width: 37px;
+    }
+
+    80% {
+      width: 20px;
+      height: 20px;
+      bottom: 50px;
+    }
+
+    100% {
+      width: 17px;
+      height: 17px;
+      background: #a46628;
+      border: 0px solid #222;
+      bottom: 43px;
+    }
+}
+
+@keyframes popIn {
+    0% {
+      width: 0px;
+      height: 0px;
+      background: white;
+      border: 0px solid #ddd;
+      opacity: 0;
+    }
+
+    50% {
+      width: 20px;
+      height: 20px;
+      background: white;
+      opacity: 1;
+      bottom: 67px;
+    }
+
+    65% {
+      width: 17px;
+      height: 17px;
+      bottom: 0px;
+      width: 37px;
+    }
+
+    80% {
+      width: 20px;
+      height: 20px;
+      bottom: 50px;
+    }
+
+    100% {
+      width: 17px;
+      height: 17px;
+      background: #a46628;
+      border: 0px solid #222;
+      bottom: 43px;
+    }
+}
+}
+
+@media (min-width: 1023px) and (max-width: 1025px) and (min-height: 800px) {
+  .hero {
+    height: 97vh;
+  }
+
+  .hero .text-test {
+    width: 80%;
+  }
+
+  .hero .text-test .title {
+    height: 12rem;
+  }
+
+  .hero .text-test .title h1 {
+    font-size: 12rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .hero .text-test .title h1 span {
+    right: -15px;
+  }
+
+  .hero .text-test .role {
+    margin-top: 8rem;
+  }
+
+  .hero .text-test .role .block {
+    height: 26rem;
+  }
+
+  .hero .text-test .role h1 {
+    font-size: 12rem;
+    padding-left: 1rem;
+  }
+
+  .hero .text-test .wordCarousel {
+    font-size: 3rem;
+    margin-right: 5vw;
+    margin-top: 8rem;
+  }
+
+  .hero .img img {
+    top: 0;
+  }
+
+@-webkit-keyframes popIn {
+    0% {
+      width: 0px;
+      height: 0px;
+      background: white;
+      border: 0px solid #ddd;
+      opacity: 0;
+    }
+
+    50% {
+      width: 23px;
+      height: 23px;
+      background: white;
+      opacity: 1;
+      bottom: 74px;
+    }
+
+    65% {
+      width: 12px;
+      height: 12px;
+      bottom: 0px;
+      width: 37px;
+    }
+
+    80% {
+      width: 25px;
+      height: 25px;
+      bottom: 65px;
+    }
+
+    100% {
+      width: 22px;
+      height: 22px;
+      background: #a46628;
+      border: 0px solid #222;
+      bottom: 58px;
+    }
+}
+
+@keyframes popIn {
+    0% {
+      width: 0px;
+      height: 0px;
+      background: white;
+      border: 0px solid #ddd;
+      opacity: 0;
+    }
+
+    50% {
+      width: 23px;
+      height: 23px;
+      background: white;
+      opacity: 1;
+      bottom: 74px;
+    }
+
+    65% {
+      width: 12px;
+      height: 12px;
+      bottom: 0px;
+      width: 37px;
+    }
+
+    80% {
+      width: 25px;
+      height: 25px;
+      bottom: 65px;
+    }
+
+    100% {
+      width: 22px;
+      height: 22px;
+      background: #a46628;
+      border: 0px solid #222;
+      bottom: 58px;
+    }
+}
+}
 
 @media (min-width: 768px) and (max-width: 979px) {
   body section {
@@ -745,29 +1419,127 @@ footer .container span {
   }
 
   .hero {
-    padding-left: 2rem;
+    height: 95vh;
   }
 
-  .hero .text {
-    margin-top: -5rem;
+  .hero .text-test {
+    width: 90%;
   }
 
-  .hero .text p {
-    font-size: 9rem;
+  .hero .text-test .title {
+    height: 8rem;
   }
 
-  .hero .text .wordCarousel {
-    margin-right: 3rem;
-    font-size: 3rem;
+  .hero .text-test .title h1 {
+    font-size: 8rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
   }
 
-  .hero .img {
-    min-height: 700px;
+  .hero .text-test .title h1 span {
+    right: -15px;
+  }
+
+  .hero .text-test .role {
+    margin-top: 5rem;
+  }
+
+  .hero .text-test .role .block {
+    height: 18rem;
+  }
+
+  .hero .text-test .role h1 {
+    font-size: 8rem;
+    padding-left: 1rem;
+  }
+
+  .hero .text-test .wordCarousel {
+    font-size: 2rem;
+    margin-right: 10vw;
+    margin-top: 4rem;
   }
 
   .hero .img img {
-    top: -15%;
+    top: 0;
   }
+
+@-webkit-keyframes popIn {
+    0% {
+      width: 0px;
+      height: 0px;
+      background: white;
+      border: 0px solid #ddd;
+      opacity: 0;
+    }
+
+    50% {
+      width: 20px;
+      height: 20px;
+      background: white;
+      opacity: 1;
+      bottom: 67px;
+    }
+
+    65% {
+      width: 17px;
+      height: 17px;
+      bottom: 0px;
+      width: 37px;
+    }
+
+    80% {
+      width: 20px;
+      height: 20px;
+      bottom: 50px;
+    }
+
+    100% {
+      width: 17px;
+      height: 17px;
+      background: #a46628;
+      border: 0px solid #222;
+      bottom: 43px;
+    }
+}
+
+@keyframes popIn {
+    0% {
+      width: 0px;
+      height: 0px;
+      background: white;
+      border: 0px solid #ddd;
+      opacity: 0;
+    }
+
+    50% {
+      width: 20px;
+      height: 20px;
+      background: white;
+      opacity: 1;
+      bottom: 67px;
+    }
+
+    65% {
+      width: 17px;
+      height: 17px;
+      bottom: 0px;
+      width: 37px;
+    }
+
+    80% {
+      width: 20px;
+      height: 20px;
+      bottom: 50px;
+    }
+
+    100% {
+      width: 17px;
+      height: 17px;
+      background: #a46628;
+      border: 0px solid #222;
+      bottom: 43px;
+    }
+}
 
   .skills {
     padding: 30px 2rem;
@@ -828,6 +1600,10 @@ footer .container span {
     width: 15vw;
   }
 
+  .work {
+    margin-bottom: 0;
+  }
+
   .work .card-box .card {
     width: 500px;
     height: 350px;
@@ -843,8 +1619,6 @@ footer .container span {
     margin-top: 25px;
   }
 }
-
-/* Landscape phone to portrait tablet */
 
 @media (min-width: 481px) and (max-width: 767px) {
   body section {
@@ -866,29 +1640,123 @@ footer .container span {
   }
 
   .hero {
-    padding-left: 2rem;
+    height: 95vh;
   }
 
-  .hero .text {
-    margin-top: -5rem;
+  .hero .text-test {
+    width: 90%;
   }
 
-  .hero .text p {
-    font-size: 6rem;
+  .hero .text-test .title {
+    height: 5rem;
   }
 
-  .hero .text .wordCarousel {
-    margin-right: 2.5rem;
+  .hero .text-test .title h1 {
+    font-size: 5rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .hero .text-test .title h1 span {
+    right: -15px;
+  }
+
+  .hero .text-test .role .block {
+    height: 12rem;
+  }
+
+  .hero .text-test .role h1 {
+    font-size: 5rem;
+    padding-left: 1rem;
+  }
+
+  .hero .text-test .wordCarousel {
     font-size: 2rem;
-  }
-
-  .hero .img {
-    min-height: 600px;
+    margin-right: 10vw;
+    margin-top: 20px;
   }
 
   .hero .img img {
-    top: -15%;
+    top: 0;
   }
+
+@-webkit-keyframes popIn {
+    0% {
+      width: 0px;
+      height: 0px;
+      background: white;
+      border: 0px solid #ddd;
+      opacity: 0;
+    }
+
+    50% {
+      width: 20px;
+      height: 20px;
+      background: white;
+      opacity: 1;
+      bottom: 60px;
+    }
+
+    65% {
+      width: 17px;
+      height: 17px;
+      bottom: 0px;
+      width: 30px;
+    }
+
+    80% {
+      width: 20px;
+      height: 20px;
+      bottom: 35px;
+    }
+
+    100% {
+      width: 15px;
+      height: 15px;
+      background: #a46628;
+      border: 0px solid #222;
+      bottom: 33px;
+    }
+}
+
+@keyframes popIn {
+    0% {
+      width: 0px;
+      height: 0px;
+      background: white;
+      border: 0px solid #ddd;
+      opacity: 0;
+    }
+
+    50% {
+      width: 20px;
+      height: 20px;
+      background: white;
+      opacity: 1;
+      bottom: 60px;
+    }
+
+    65% {
+      width: 17px;
+      height: 17px;
+      bottom: 0px;
+      width: 30px;
+    }
+
+    80% {
+      width: 20px;
+      height: 20px;
+      bottom: 35px;
+    }
+
+    100% {
+      width: 15px;
+      height: 15px;
+      background: #a46628;
+      border: 0px solid #222;
+      bottom: 33px;
+    }
+}
 
   .skills {
     padding-right: 2rem;
@@ -970,6 +1838,7 @@ footer .container span {
   .work {
     padding-right: 2rem;
     padding-left: 2rem;
+    margin-bottom: 0;
   }
 
   .work .card-box .card {
@@ -1031,10 +1900,271 @@ footer .container span {
   }
 }
 
-/* Landscape phones and down */
+@media (min-width: 700px) and (max-width: 979px) and (max-height: 450px) {
+  nav .right {
+    display: none;
+  }
+
+  .hero {
+    height: 100vh;
+    padding-top: 0;
+    margin-top: -50px;
+  }
+
+  .hero .text-test {
+    width: 90%;
+  }
+
+  .hero .text-test .title {
+    height: 4rem;
+  }
+
+  .hero .text-test .title h1 {
+    font-size: 4rem;
+    padding-left: 1rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .hero .text-test .title h1 span {
+    right: -15px;
+  }
+
+  .hero .text-test .role {
+    margin-top: 0;
+  }
+
+  .hero .text-test .role .block {
+    height: 8rem;
+  }
+
+  .hero .text-test .role h1 {
+    font-size: 4rem;
+    padding-left: 1rem;
+  }
+
+  .hero .text-test .wordCarousel {
+    font-size: 1.5rem;
+    margin-right: 10vw;
+    margin-top: -50px;
+  }
+
+  .hero .img img {
+    top: 0;
+  }
+
+@-webkit-keyframes popIn {
+    0% {
+      width: 0px;
+      height: 0px;
+      background: white;
+      border: 0px solid #ddd;
+      opacity: 0;
+    }
+
+    50% {
+      width: 20px;
+      height: 20px;
+      background: white;
+      opacity: 1;
+      bottom: 60px;
+    }
+
+    65% {
+      width: 17px;
+      height: 17px;
+      bottom: 0px;
+      width: 30px;
+    }
+
+    80% {
+      width: 20px;
+      height: 20px;
+      bottom: 35px;
+    }
+
+    100% {
+      width: 15px;
+      height: 15px;
+      background: #a46628;
+      border: 0px solid #222;
+      bottom: 15px;
+    }
+}
+
+@keyframes popIn {
+    0% {
+      width: 0px;
+      height: 0px;
+      background: white;
+      border: 0px solid #ddd;
+      opacity: 0;
+    }
+
+    50% {
+      width: 20px;
+      height: 20px;
+      background: white;
+      opacity: 1;
+      bottom: 60px;
+    }
+
+    65% {
+      width: 17px;
+      height: 17px;
+      bottom: 0px;
+      width: 30px;
+    }
+
+    80% {
+      width: 20px;
+      height: 20px;
+      bottom: 35px;
+    }
+
+    100% {
+      width: 15px;
+      height: 15px;
+      background: #a46628;
+      border: 0px solid #222;
+      bottom: 15px;
+    }
+}
+}
+
+@media (min-width: 481px) and (max-width: 767px) and (max-height: 400px) {
+  .hero {
+    height: 100vh;
+    padding-top: 0;
+    margin-top: -50px;
+  }
+
+  .hero .text-test {
+    width: 90%;
+  }
+
+  .hero .text-test .title {
+    height: 4rem;
+  }
+
+  .hero .text-test .title h1 {
+    font-size: 4rem;
+    padding-left: 1rem;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  .hero .text-test .title h1 span {
+    right: -15px;
+  }
+
+  .hero .text-test .role {
+    margin-top: 0;
+  }
+
+  .hero .text-test .role .block {
+    height: 8rem;
+  }
+
+  .hero .text-test .role h1 {
+    font-size: 4rem;
+    padding-left: 1rem;
+  }
+
+  .hero .text-test .wordCarousel {
+    font-size: 1.5rem;
+    margin-right: 10vw;
+    margin-top: -50px;
+  }
+
+  .hero .img img {
+    top: 0;
+  }
+
+@-webkit-keyframes popIn {
+    0% {
+      width: 0px;
+      height: 0px;
+      background: white;
+      border: 0px solid #ddd;
+      opacity: 0;
+    }
+
+    50% {
+      width: 20px;
+      height: 20px;
+      background: white;
+      opacity: 1;
+      bottom: 60px;
+    }
+
+    65% {
+      width: 17px;
+      height: 17px;
+      bottom: 0px;
+      width: 30px;
+    }
+
+    80% {
+      width: 20px;
+      height: 20px;
+      bottom: 35px;
+    }
+
+    100% {
+      width: 15px;
+      height: 15px;
+      background: #a46628;
+      border: 0px solid #222;
+      bottom: 15px;
+    }
+}
+
+@keyframes popIn {
+    0% {
+      width: 0px;
+      height: 0px;
+      background: white;
+      border: 0px solid #ddd;
+      opacity: 0;
+    }
+
+    50% {
+      width: 20px;
+      height: 20px;
+      background: white;
+      opacity: 1;
+      bottom: 60px;
+    }
+
+    65% {
+      width: 17px;
+      height: 17px;
+      bottom: 0px;
+      width: 30px;
+    }
+
+    80% {
+      width: 20px;
+      height: 20px;
+      bottom: 35px;
+    }
+
+    100% {
+      width: 15px;
+      height: 15px;
+      background: #a46628;
+      border: 0px solid #222;
+      bottom: 15px;
+    }
+}
+}
 
 @media (max-width: 480px) {
   body section {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-bottom: 2rem;
     padding-right: 1rem;
     padding-left: 1rem;
   }
@@ -1047,36 +2177,123 @@ footer .container span {
     display: none;
   }
 
-  body section {
-    margin-bottom: 2rem;
-    padding-right: 1rem;
+  .hero {
+    height: 95vh;
+  }
+
+  .hero .text-test {
+    width: 90%;
+  }
+
+  .hero .text-test .title {
+    height: 4rem;
+  }
+
+  .hero .text-test .title h1 {
+    font-size: 4rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .hero .text-test .title h1 span {
+    right: -10px;
+  }
+
+  .hero .text-test .role .block {
+    height: 10rem;
+  }
+
+  .hero .text-test .role h1 {
+    font-size: 4rem;
     padding-left: 1rem;
   }
 
-  .hero {
-    padding-left: 2rem;
-  }
-
-  .hero .text {
-    margin-top: -5rem;
-  }
-
-  .hero .text p {
-    font-size: 4rem;
-    line-height: 6rem;
-  }
-
-  .hero .text p span {
-    display: block;
-  }
-
-  .hero .text .wordCarousel {
+  .hero .text-test .wordCarousel {
     font-size: 1.2rem;
+    margin-right: 10vw;
   }
 
   .hero .img img {
-    top: -20%;
+    top: 0;
   }
+
+@-webkit-keyframes popIn {
+    0% {
+      width: 0px;
+      height: 0px;
+      background: white;
+      border: 0px solid #ddd;
+      opacity: 0;
+    }
+
+    50% {
+      width: 20px;
+      height: 20px;
+      background: white;
+      opacity: 1;
+      bottom: 60px;
+    }
+
+    65% {
+      width: 17px;
+      height: 17px;
+      bottom: 0px;
+      width: 30px;
+    }
+
+    80% {
+      width: 20px;
+      height: 20px;
+      bottom: 35px;
+    }
+
+    100% {
+      width: 10px;
+      height: 10px;
+      background: #a46628;
+      border: 0px solid #222;
+      bottom: 30px;
+    }
+}
+
+@keyframes popIn {
+    0% {
+      width: 0px;
+      height: 0px;
+      background: white;
+      border: 0px solid #ddd;
+      opacity: 0;
+    }
+
+    50% {
+      width: 20px;
+      height: 20px;
+      background: white;
+      opacity: 1;
+      bottom: 60px;
+    }
+
+    65% {
+      width: 17px;
+      height: 17px;
+      bottom: 0px;
+      width: 30px;
+    }
+
+    80% {
+      width: 20px;
+      height: 20px;
+      bottom: 35px;
+    }
+
+    100% {
+      width: 10px;
+      height: 10px;
+      background: #a46628;
+      border: 0px solid #222;
+      bottom: 30px;
+    }
+}
 
   .skills {
     padding-right: 2rem;
@@ -1233,10 +2450,11 @@ footer .container span {
   footer .container {
     display: block;
     padding-top: 20px;
+    text-align: center;
   }
 
   footer .container span {
-    font-size: 0.7rem;
+    font-size: 0.5rem;
   }
 }
 
