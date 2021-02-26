@@ -2420,6 +2420,10 @@ footer .container span {
     margin-top: 20px;
   }
 
+  .contact {
+    padding-left: 2rem;
+  }
+
   .contact .container {
     display: block;
   }
