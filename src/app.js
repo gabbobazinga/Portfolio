@@ -7,7 +7,14 @@ new Vue({
         hover: false,
         show: true,
         scrollPosition: '',
-        cards: [
+        cards: [{
+                title: 'Convengo.it',
+                tags: ['HTML', 'SCSS', 'JS', 'VUE', 'LARAVEL', 'PHP'],
+                webUrl: 'https://convengo.it',
+                codeUrl: '',
+                pathImg: 'https://i.ibb.co/mS32WTw/convengo-it.png',
+                info: 'Sistema di comparazione che permette a tutti, privati e aziende, di accedere e confrontare le offerte e i fornitori luce, gas, internet casa e non solo, in modo semplice e veloce, con la possibilità di richiedere una consulenza personalizzata.',
+            },
             {
                 title: 'Boolflix',
                 tags: ['HTML', 'CSS', 'JS', 'VUE'],
@@ -75,16 +82,16 @@ new Vue({
         ]
     },
     methods: {
-        scroll(){
+        scroll() {
             var offset = 100;
             var el = document.getElementById(this.tab);
             window.scroll({ top: (el.offsetTop - offset), left: 0, behavior: 'smooth' });
         },
-        handleScroll(){
+        handleScroll() {
             this.scrollPosition = window.scrollY;
         }
     },
-    mounted() {    
+    mounted() {
         window.addEventListener('scroll', this.handleScroll);
     }
 });
