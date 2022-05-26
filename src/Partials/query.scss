@@ -1,8 +1,4 @@
 @media (min-width: 1699px) {
-    body {
-        max-width: 1700px;
-        margin: auto;
-    }
     nav {
         padding-right: 70px;
     }
@@ -16,14 +12,11 @@
     }
     .about {
         .container {
-            position: relative;
             .left {
                 width: 40vw;
             }
             .right {
                 width: 50vw;
-                position: relative;
-                right: -500px;
                 &:hover {
                     .rectangular-form {
                         width: 100%;
@@ -66,14 +59,6 @@
 }
 
 @media (min-width: 980px) and (max-width: 1399px) {
-    .skills {
-        .logos {
-            ul li img {
-                max-height: 30px;
-                max-width: 60px;
-            }
-        }
-    }
     .about {
         margin-bottom: 1rem;
         .container {
@@ -102,7 +87,7 @@
             width: 80%;
             .title {
                 height: 8rem;
-                h1 {
+                h3 {
                     font-size: 8rem;
                     padding-left: 1rem;
                     padding-bottom: 1rem;
@@ -116,7 +101,7 @@
                 .block {
                     height: 18rem;
                 }
-                h1 {
+                h3 {
                     font-size: 8rem;
                     padding-left: 1rem;
                 }
@@ -196,17 +181,8 @@
         }
     }
     .contact {
-        .container {
-            .mapouter {
-                margin: 0;
-                iframe {
-                    width: 90%;
-                    height: 90%;
-                }
-            }
-            ul li a {
-                font-size: 1.2rem;
-            }
+        ul li a {
+            font-size: 1.2rem;
         }
     }
 }
@@ -218,7 +194,7 @@
             width: 80%;
             .title {
                 height: 8rem;
-                h1 {
+                h3 {
                     font-size: 8rem;
                     padding-left: 1rem;
                     padding-bottom: 1rem;
@@ -232,7 +208,7 @@
                 .block {
                     height: 18rem;
                 }
-                h1 {
+                h3 {
                     font-size: 8rem;
                     padding-left: 1rem;
                 }
@@ -292,7 +268,7 @@
             width: 80%;
             .title {
                 height: 12rem;
-                h1 {
+                h3 {
                     font-size: 12rem;
                     padding-left: 1rem;
                     padding-bottom: 1rem;
@@ -306,7 +282,7 @@
                 .block {
                     height: 26rem;
                 }
-                h1 {
+                h3 {
                     font-size: 12rem;
                     padding-left: 1rem;
                 }
@@ -379,7 +355,7 @@
             width: 90%;
             .title {
                 height: 8rem;
-                h1 {
+                h3 {
                     font-size: 8rem;
                     padding-left: 1rem;
                     padding-bottom: 1rem;
@@ -393,7 +369,7 @@
                 .block {
                     height: 18rem;
                 }
-                h1 {
+                h3 {
                     font-size: 8rem;
                     padding-left: 1rem;
                 }
@@ -452,15 +428,8 @@
         .right {
             padding-left: 10px;
         }
-        .logos {
-            ul li img {
-                max-height: 20px;
-                max-width: 50px;
-            }
-        }
     }
     .about {
-        position: relative;
         margin-bottom: 0;
         .container {
             .left {
@@ -508,15 +477,6 @@
             }
         }
     }
-    .contact {
-        .container {
-            display: block;
-            .mapouter {
-                margin: auto;
-                margin-top: 25px;
-            }
-        }
-    }
 }
 
 @media (min-width: 481px) and (max-width: 767px) {
@@ -531,9 +491,9 @@
             .left {
                 margin-left: 1rem;
             }
-            .right {
-                display: none;
-            }
+            // .right {
+            //     display: none;
+            // }
         }
     }
     body {
@@ -548,7 +508,7 @@
             width: 90%;
             .title {
                 height: 5rem;
-                h1 {
+                h3 {
                     font-size: 5rem;
                     padding-left: 1rem;
                     padding-bottom: 1rem;
@@ -561,7 +521,7 @@
                 .block {
                     height: 12rem;
                 }
-                h1 {
+                h3 {
                     font-size: 5rem;
                     padding-left: 1rem;
                 }
@@ -627,9 +587,6 @@
                 display: none;
             }
         }
-        .logos {
-            display: none;
-        }
     }
     .about {
         margin-bottom: 0;
@@ -641,7 +598,7 @@
                 padding-right: 0;
                 .img-about {
                     display: block;
-                    h1 {
+                    h3 {
                         margin-left: 0;
                     }
                     .box-img {
@@ -709,33 +666,21 @@
     .contact {
         padding-right: 2rem;
         padding-left: 2rem;
-        .container {
-            display: block;
-            .mapouter {
-                margin: 0;
-                iframe {
-                    width: 90%;
-                    height: 90%;
-                }
-            }
-            ul {
-                margin-bottom: 40px;
-                li {
-                    a {
-                        font-size: 1rem;
-                    }
+        ul {
+            margin-bottom: 40px;
+            li {
+                a {
+                    font-size: 1rem;
                 }
             }
         }
     }
     footer {
-        .container {
-            text-align: center;
-            display: block;
-            padding-top: 20px;
-            span {
-                font-size: 0.7rem;
-            }
+        text-align: center;
+        display: block;
+        padding-top: 20px;
+        span {
+            font-size: 0.7rem;
         }
     }
 }
@@ -754,7 +699,7 @@
             width: 90%;
             .title {
                 height: 4rem;
-                h1 {
+                h3 {
                     font-size: 4rem;
                     padding-left: 1rem;
                     margin-bottom: 0;
@@ -769,7 +714,7 @@
                 .block {
                     height: 8rem;
                 }
-                h1 {
+                h3 {
                     font-size: 4rem;
                     padding-left: 1rem;
                 }
@@ -831,7 +776,7 @@
             width: 90%;
             .title {
                 height: 4rem;
-                h1 {
+                h3 {
                     font-size: 4rem;
                     padding-left: 1rem;
                     margin-bottom: 0;
@@ -846,7 +791,7 @@
                 .block {
                     height: 8rem;
                 }
-                h1 {
+                h3 {
                     font-size: 4rem;
                     padding-left: 1rem;
                 }
@@ -914,9 +859,9 @@
             .left {
                 margin-left: 1rem;
             }
-            .right {
-                display: none;
-            }
+            // .right {
+            //     display: none;
+            // }
         }
     }
     .hero {
@@ -925,7 +870,7 @@
             width: 90%;
             .title {
                 height: 4rem;
-                h1 {
+                h3 {
                     font-size: 4rem;
                     padding-left: 1rem;
                     padding-top: 1rem;
@@ -938,7 +883,7 @@
                 .block {
                     height: 10rem;
                 }
-                h1 {
+                h3 {
                     font-size: 4rem;
                     padding-left: 1rem;
                 }
@@ -1009,9 +954,6 @@
                 padding-bottom: 50px;
             }
         }
-        .logos {
-            display: none;
-        }
     }
     .about {
         margin-bottom: 0;
@@ -1024,7 +966,7 @@
                 padding-right: 0;
                 .img-about {
                     display: block;
-                    h1 {
+                    h3 {
                         margin-left: 0;
                     }
                     .box-img {
@@ -1098,38 +1040,39 @@
     }
     .contact {
         padding-left: 2rem;
-        .container {
-            display: block;
-            .mapouter {
-                margin: 0;
-                iframe {
-                    width: 90%;
-                    height: 90%;
-                }
-            }
-            ul {
-                margin-bottom: 40px;
-                width: 100%;
-                li {
-                    a {
-                        font-size: 0.8rem;
-                        margin-left: 20px;
-                        i {
-                            margin-right: 10px;
-                        }
+        ul {
+            margin-bottom: 40px;
+            width: 100%;
+            li {
+                a {
+                    font-size: 0.8rem;
+                    margin-left: 20px;
+                    i {
+                        margin-right: 10px;
                     }
                 }
             }
         }
     }
     footer {
-        .container {
-            display: block;
-            padding-top: 20px;
-            text-align: center;
-            span {
-                font-size: 0.5rem;
-            }
+        display: block;
+        padding-top: 20px;
+        text-align: center;
+        span {
+            font-size: 0.5rem;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .d-sm-none { display: none !important; }
+}
+
+@media (max-width: 1200px) and (min-width: 990px) {
+    .hero {
+        .subtitle {
+            position: relative;
+            top: 70px;
         }
     }
 }
