@@ -128,7 +128,7 @@ h1, h3, h4 {
 }
 .bar-short {
     width: 2px;
-    height: 80%;
+    height: 75%;
     background-color: #fff;
     opacity: .8;
     position: absolute;
@@ -138,6 +138,7 @@ h1, h3, h4 {
     border-radius: 10px;
     @media (max-width: 768px) {
         left: calc(0.5rem + 15px);
+        height: 80%;
     }
 }
 
